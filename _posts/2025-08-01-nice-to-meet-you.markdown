@@ -1,0 +1,14 @@
+---
+layout: post
+title: Nice meeting you! Here's my Resume.
+date: 2025-08-01 00:00:00 +0500
+description: # Add post description (optional)
+img: i-rest.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [Resume, CV, Software Engineering, Software Development, Full Stack Developer]
+---
+Thanks for stopping by. Below you'll find a snapshot of my experience as a senior full-stack engineer and architect, with a focus on scalable enterprise systems, Azure cloud solutions, and hardware/software integration. I’ve built this page to give you a clear, no-frills view of my technical depth, leadership, and collaborative mindset—all in one place.
+Feel free to explore, and if anything resonates, I’d love to connect.
+
+## Resume
+<iframe src="resume.pdf" width="100%" height="800px"></iframe>
