@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nice meeting you! Here's my Resume.
+title: Let’s stay in touch. Here’s my resume.
 date: 2025-08-01 00:00:00
 description: # Add post description (optional)
 img: resume.png # Add image post (optional)
