@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Nice meeting you! Here's my Resume.
-date: 2025-08-01 00:00:00 +0500
+date: 2025-08-01 00:00:00
 description: # Add post description (optional)
-img: i-rest.jpg # Add image post (optional)
+img: resume.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Resume, CV, Software Engineering, Software Development, Full Stack Developer]
 ---
@@ -11,4 +11,4 @@ Thanks for stopping by. Below you'll find a snapshot of my experience as a senio
 Feel free to explore, and if anything resonates, I’d love to connect.
 
 ## Resume
-<iframe src="resume.pdf" width="100%" height="800px"></iframe>
+<iframe src="{{site.baseurl}}/assets/pdf/resume.pdf" width="100%" height="800px"></iframe>
