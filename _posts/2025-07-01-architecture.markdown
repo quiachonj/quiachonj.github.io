@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System Design
-date: 2025-07-01 00:00:00
+date: 2024-07-01 00:00:00
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: how-to-start.jpg # Add image post (optional)
 tags: [Software Architecture, Solutions Architecture, Engineering Principles] # add tag
