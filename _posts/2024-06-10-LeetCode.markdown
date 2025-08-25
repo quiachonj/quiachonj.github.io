@@ -1,0 +1,60 @@
+---
+layout: post
+title: Blog - LC0005 Longest Palindromic Substring
+date: 2017-09-12 00:00:00 +0300
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: workflow.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [LeetCode, Algorithm] # add tag
+---
+
+Encountered a reddit user asking about this problem. This problem is a classic. It's clean, deceptively tricky, and rich with optimization opportunities. Here’s a thoughtful, and technical approach to the problem.
+
+>Palindromes aren’t just wordplay—they’re a gateway to understanding dynamic programming, two-pointer strategies, and substring manipulation.
+
+## What I Learned, Part 1
+- Palindromes are an odd or an even character count string.
+- Brute forcing it would mean checking each substring. Excruciatingly slow. O(n^3) Complexity.
+- Can also be implemented with a boolean matrix approach. Start from each single character, then check if the doubles are palindromes - and so on... while tagging each matrix x,y entry with a true/false bit if it is found to be a palindrom. O(n^2) Complexity.
+
+Then I remembered something from my MSCS days. Manacher's Algorithm.
+
+>The idea is, instead of checking each center naively, Manacher’s algorithm reuses previously computed palindrome information to skip redundant work.
+
+{% highlight c# %}
+            StringBuilder newString = new("#");
+
+            foreach (char c in s)
+                newString.Append(c).Append('#');
+
+            int length = newString.Length;
+            int[] radii = new int[length];
+            int center = 0;
+            int radius = 0;
+
+            for (int i = 0; i < length; i++)
+            {
+                int mirror = 2 * center - i;
+
+                if (radius > i)
+                    radii[i] = Math.Min(radius - i, radii[mirror]);
+
+                while (i + 1 + radii[i] < length && i - 1 - radii[i] >= 0 && newString[i + 1 + radii[i]] == newString[i - 1 - radii[i]])
+                    radii[i]++;
+
+                if (i + radii[i] > radius)
+                {
+                    center = i;
+                    radius = i + radii[i];
+                }
+            }
+{% endhighlight %}
+An O(n) approach. Drawback is O(2n) space.
+
+## What I Learned, Part 2
+- Optimization isn’t always about speed—sometimes it’s about clarity and maintainability.
+- Center expansion is elegant and surprisingly performant.
+- Edge cases (like even-length palindromes) are where bugs love to hide.
+
+## Final Thoughts
+This problem’s a great reminder that elegant solutions often emerge from pattern recognition, not brute force. This is a gem worth revisiting just to sharpen our DSA problem solving skills.
