@@ -1,0 +1,31 @@
+---
+layout: post
+title: Case Study - Billing Consolidation & Orchestration at Scale
+date: 2025-07-01 00:00:00
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: software.jpg # Add image post (optional)
+tags: [Software Architecture, Full Stack Development, Software Engineering] # add tag
+---
+
+## The Challenge:
+Multiple legacy billing systems across business units were creating reconciliation delays, operational overhead, and fragmented customer experiences. The goal was to consolidate billing logic into a unified, scalable orchestration layer—without compromising uptime or introducing brittle dependencies.
+
+>
+My Role:
+Led architecture and implementation of a cloud-native billing orchestration platform using Azure services. Designed for high availability, eventual consistency, and modular extensibility to support future integrations.
+
+### Solution Highlights:
+- Azure Durable Functions for orchestrating long-running billing workflows with built-in retry and state management.
+- Azure Service Bus to decouple microservices and ensure resilient message delivery across billing events.
+- Cosmos DB with multi-region writes to support eventual consistency and low-latency access across geographies.
+- Azure API Management to expose unified billing endpoints while enforcing throttling, caching, and security policies.
+- Custom retry logic and idempotency controls to handle transient failures and ensure billing accuracy without duplication.
+
+### Design Philosophy:
+Prioritized availability over strict consistency, aligning with the business need for uninterrupted billing operations. Leveraged event-driven architecture to isolate failures, enable graceful degradation, and support asynchronous reconciliation.
+
+### Impact:
+- Reduced billing latency by 35%
+- Enabled seamless onboarding of new billing sources with minimal code changes
+- Improved system resilience and observability across distributed components
+
