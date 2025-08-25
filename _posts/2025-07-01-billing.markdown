@@ -7,6 +7,8 @@ img: software.jpg # Add image post (optional)
 tags: [Software Architecture, Full Stack Development, Software Engineering] # add tag
 ---
 
+As the organization scaled, billing complexity grew exponentially. Multiple legacy systems—each with its own logic, cadence, and data model—were stitched together through brittle integrations and manual reconciliation. This led to delayed invoicing, inconsistent customer experiences, and operational bottlenecks that couldn’t keep pace with growth. The challenge wasn’t just technical—it was strategic: how do you unify billing across diverse systems without disrupting availability or introducing rigid dependencies?
+
 ## The Challenge:
 Multiple legacy billing systems across business units were creating reconciliation delays, operational overhead, and fragmented customer experiences. The goal was to consolidate billing logic into a unified, scalable orchestration layer—without compromising uptime or introducing brittle dependencies.
 
