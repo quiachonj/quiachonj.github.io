@@ -5,7 +5,7 @@ date: 2017-09-12 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: workflow.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [LeetCode, Algorithm] # add tag
+tags: [LeetCode, Algorithm, Data Structure] # add tag
 ---
 
 Encountered a reddit user asking about this problem. This problem is a classic. It's clean, deceptively tricky, and rich with optimization opportunities. Here’s a thoughtful, and technical approach to the problem.
