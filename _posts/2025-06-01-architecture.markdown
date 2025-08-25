@@ -7,7 +7,9 @@ img: how-to-start.jpg # Add image post (optional)
 tags: [Software Architecture, Solutions Architectuer, Engineering Principles] # add tag
 ---
 
-Architecture isn’t just about systems—it’s about the people who build, operate, and rely on them. My approach blends technical rigor with practical empathy, shaped by years of navigating legacy constraints, scaling cloud-native platforms, and integrating hardware in real-world environments. I design for adaptability, clarity, and long-term sustainability—so teams can move fast without breaking trust. Whether I’m leading modernization efforts or architecting from scratch, I focus on principles that make systems intuitive, resilient, and ready to evolve.
+Architecture isn’t just about systems—it’s about the people who build, operate, and rely on them. My approach blends technical rigor with practical empathy, shaped by years of navigating legacy constraints, scaling cloud-native platforms, and integrating hardware in real-world environments. I design for adaptability, clarity, and long-term sustainability—so teams can move fast without breaking trust. 
+
+>Whether I’m leading modernization efforts or architecting from scratch, I focus on principles that make systems intuitive, resilient, and ready to evolve.
 
 ## Architecture as a Living System
 I treat architecture as a living system—something that should evolve gracefully, scale predictably, and remain maintainable under pressure. Whether I’m modernizing legacy platforms or designing cloud-native solutions, I prioritize clarity, composability, and resilience. That means clean separation of concerns, predictable data flow, and infrastructure that supports rapid iteration without compromising stability.
