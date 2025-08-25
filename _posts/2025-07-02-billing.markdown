@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Billing Consolidation and Orchestration at Scale
+title: Project Highlight: Billing
 date: 2025-07-01 00:00:00
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: billing-app.png # Add image post (optional)
 tags: [Software Architecture, Full Stack Development, Software Engineering] # add tag
 ---
 
+## Billing Consolidation and Orchestration at Scale
 As organizations scale, billing complexity tends to grow with them. Multiple systems—each with its own cadence, logic, and data model—often coexist across business units, creating fragmented customer experiences and operational inefficiencies. Manual reconciliation, brittle integrations, and delayed invoicing become the norm. The challenge isn’t just technical—it’s strategic: how do you unify billing across diverse systems without compromising availability or introducing rigid dependencies?
 
 ## Modern Billing Without the Bloat
