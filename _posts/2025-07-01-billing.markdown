@@ -12,8 +12,18 @@ As organizations scale, billing complexity tends to grow with them. Multiple sys
 ## The Challenge:
 Multiple legacy billing systems across business units were creating reconciliation delays, operational overhead, and fragmented customer experiences. The goal was to consolidate billing logic into a unified, scalable orchestration layer—without compromising uptime or introducing brittle dependencies.
 
->
-My Role:
+### Common Pitfalls:
+Many organizations underestimate the complexity of billing consolidation by treating it as a simple data migration or API stitching exercise. They often:
+- Over-index on consistency at the expense of availability, leading to brittle systems that fail under load or partial outages
+- Hard-code business logic into monoliths or tightly coupled services, making future integrations painful and error-prone
+- Ignore asynchronous workflows, assuming all billing events can be processed in real time without retries or compensation
+- Neglect observability, leaving teams blind to failures in distributed workflows and reconciliation gaps
+- Delay architectural decisions, patching legacy systems until scale forces a reactive overhaul
+By addressing these head-on, I design systems that embrace eventual consistency, favor modular orchestration, and scale gracefully with business growth.
+
+>If your company is navigating these challenges—or starting to feel the strain of legacy billing systems—I can help. I’ve worked hands-on with teams to design resilient, scalable billing architectures that don’t just patch problems, but lay the groundwork for long-term growth. Whether you're exploring modernization, rethinking orchestration, or just trying to make sense of where the bottlenecks are, I’m always open to a thoughtful conversation.
+
+### My Role:
 Led architecture and implementation of a cloud-native billing orchestration platform using Azure services. Designed for high availability, eventual consistency, and modular extensibility to support future integrations.
 
 ### Solution Highlights:
