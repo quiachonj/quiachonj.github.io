@@ -22,32 +22,33 @@ Then I remembered something from my MSCS days. Manacher's Algorithm.
 >The idea is, instead of checking each center naively, Manacher’s algorithm reuses previously computed palindrome information to skip redundant work.
 
 {% highlight c# %}
-            StringBuilder newString = new("#");
+    StringBuilder newString = new("#");
 
-            foreach (char c in s)
-                newString.Append(c).Append('#');
+    foreach (char c in s)
+        newString.Append(c).Append('#');
 
-            int length = newString.Length;
-            int[] radii = new int[length];
-            int center = 0;
-            int radius = 0;
+    int length = newString.Length;
+    int[] radii = new int[length];
+    int center = 0;
+    int radius = 0;
 
-            for (int i = 0; i < length; i++)
-            {
-                int mirror = 2 * center - i;
+    for (int i = 0; i < length; i++)
+    {
+        int mirror = 2 * center - i;
 
-                if (radius > i)
-                    radii[i] = Math.Min(radius - i, radii[mirror]);
+        if (radius > i)
+            radii[i] = Math.Min(radius - i, radii[mirror]);
 
-                while (i + 1 + radii[i] < length && i - 1 - radii[i] >= 0 && newString[i + 1 + radii[i]] == newString[i - 1 - radii[i]])
-                    radii[i]++;
+        while (i + 1 + radii[i] < length && i - 1 - radii[i] >= 0 
+        && newString[i + 1 + radii[i]] == newString[i - 1 - radii[i]])
+            radii[i]++;
 
-                if (i + radii[i] > radius)
-                {
-                    center = i;
-                    radius = i + radii[i];
-                }
-            }
+        if (i + radii[i] > radius)
+        {
+            center = i;
+            radius = i + radii[i];
+        }
+    }
 {% endhighlight %}
 An O(n) approach. Drawback is O(2n) space.
 
