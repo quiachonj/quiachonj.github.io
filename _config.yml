@@ -11,7 +11,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Author Settings
 author: Josh Quiachon # add your name
 author-img: josh-qui.jpg # add your photo
-about-author: "Software Engineer\nAzure Developer\nSolutions Architect"
+about-author: | 
+ Software Engineer
+ Solutions Architect
 # social-twitter: # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: quiachonj # add your Github handle
