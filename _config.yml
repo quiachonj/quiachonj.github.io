@@ -13,10 +13,10 @@ author: Josh Quiachon # add your name
 author-img: josh-qui.jpg # add your photo
 title-author: |
  Software Engineer
- Full-Stack Developer (.Net)
+ .NET Full-Stack Developer
  Azure Developer
  Solutions Architect
-about-author: 15+ years experience building scalable, enterprise-grade applications.
+about-author: A software engineer with over 15 years of experience building scalable, enterprise-grade applications
 stack: | # add tech stack
  C#
  ASP.Net
