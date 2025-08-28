@@ -1480,13 +1480,13 @@ a.newer-posts:hover {
   }
 }
 .small-text {
-  font-size: 0.5rem;
+  font-size: 60%;
   line-height: 1.2;
   color: #555; /* Optional for softer tone */
 }
 
 .smaller-text {
-  font-size: 0.2rem;
-  line-height: 1;
+  font-size: 40%;
+  line-height: 1.2;
   color: #555; /* Optional for softer tone */
 }
