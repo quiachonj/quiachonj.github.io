@@ -1479,13 +1479,13 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
-.title-author {
-  font-size:x-small;
+
+.about .title-author {
+  font-size:80%;
   line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
-
-.title-author::after {
+.about .title-author::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1501,13 +1501,12 @@ a.newer-posts:hover {
   background-color: #515151;
 }
 
-.about-author {
-  font-size:xx-small;
+.about .about-author {
+  font-size:60%;
   line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
-
-.about-author::after {
+.about .about-author::after {
   content: "";
   position: absolute;
   left: 50%;
