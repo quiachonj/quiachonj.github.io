@@ -16,6 +16,9 @@ about-author: |
  Full-Stack Developer (.Net)
  Azure Developer
  Solutions Architect
+stack: | # add tech stack
+ C#
+ ASP.Net
 # social-twitter: # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: quiachonj # add your Github handle
