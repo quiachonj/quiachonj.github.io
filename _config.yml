@@ -11,11 +11,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Author Settings
 author: Josh Quiachon # add your name
 author-img: josh-qui.jpg # add your photo
-about-author: |
+title-author: |
  Software Engineer
  Full-Stack Developer (.Net)
  Azure Developer
  Solutions Architect
+about-author: 15+ years experience building scalable, enterprise-grade applications.
 stack: | # add tech stack
  C#
  ASP.Net
