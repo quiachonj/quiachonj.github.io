@@ -1480,8 +1480,8 @@ a.newer-posts:hover {
   }
 }
 .title-author {
-  font-size: 40%;
-  line-height: 1.2;
+  font-size:x-small;
+  line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
 
@@ -1502,8 +1502,8 @@ a.newer-posts:hover {
 }
 
 .about-author {
-  font-size: 50%;
-  line-height: 1.2;
+  font-size:xx-small;
+  line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
 
