@@ -1485,7 +1485,7 @@ a.newer-posts:hover {
   line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
-.about .title-author::after {
+/* .about .title-author::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1499,14 +1499,14 @@ a.newer-posts:hover {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   background-color: #515151;
-}
+} */
 
 .about .about-author {
   font-size:60%;
   line-height: 1.4;
   color: #555; /* Optional for softer tone */
 }
-.about .about-author::after {
+/* .about .about-author::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1520,4 +1520,20 @@ a.newer-posts:hover {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   background-color: #515151;
+} */
+
+.read-more {
+  background-color: transparent;
+  border: 1px solid #0078D4;
+  color: #0078D4;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.read-more:hover {
+  background-color: #0078D4;
+  color: white;
 }
