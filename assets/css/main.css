@@ -1217,14 +1217,6 @@ a.newer-posts:hover {
   text-transform: uppercase;
 }
 
-/* .page-cover-image {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  max-height: 500px;
-  background-color: #fafafa;
-  overflow: hidden;
-} */
 .page-cover-image {
   position: relative;
   padding: 0;
@@ -1232,10 +1224,18 @@ a.newer-posts:hover {
   max-height: 500px;
   background-color: #fafafa;
   overflow: hidden;
-  /* display: flex; */
+}
+/* .page-cover-image {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .page-cover-image figure {
   position: relative;
@@ -1257,6 +1257,9 @@ a.newer-posts:hover {
 .page-cover-image .page-image {
   width: 100%;
   height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* .page-cover-image .page-image {
