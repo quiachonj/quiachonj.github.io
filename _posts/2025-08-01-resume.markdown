@@ -1,0 +1,42 @@
+---
+layout: post
+title: Resume
+date: 2025-08-01 00:00:00
+description: # Add post description (optional)
+img: resume.png # Add image post (optional)
+fig-caption: Resume # Add figcaption (optional)
+tags: [Resume, Software Development, Full Stack Developer]
+---
+
+Thanks for stopping by. My resume is here if you’re exploring collaborators or talent. Below you'll find a snapshot of my experience as a senior full-stack engineer and architect, with a focus on scalable enterprise systems and Azure cloud solutions. 
+
+>I’ve built this page to give you a clear, no-frills view of my technical depth, leadership, and collaborative mindset, all in one place. Feel free to explore, and if anything resonates, I’d love to connect.
+
+## Resume
+<section id="resume">
+  <div id="resume-container"></div>
+
+  <script>
+    const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+    const container = document.getElementById('resume-container');
+
+    if (isMobile) {
+      container.innerHTML = '<iframe src="{{ site.baseurl }}/assets/htm/resume.htm" width="100%" height="800px" style="border:none;"></iframe>';
+    } else {
+      container.innerHTML = '<iframe src="{{ site.baseurl }}/assets/pdf/resume.pdf" width="100%" height="800px" style="border:none;"></iframe>';
+    }
+  </script>
+</section>
+<!-- 
+<section id="resume">
+  <div id="resume-container"></div>
+  <script src="{{site.baseurl}}/assets/js/resume-switcher.js"></script>
+</section> -->
+<!-- <p style="text-align:center;">
+  <a href="{{ site.baseurl }}/assets/pdf/resume.pdf" target="_blank">Download Resume (PDF)</a>
+</p> -->
+<!-- <iframe src="{{site.baseurl}}/assets/htm/resume.htm" width="100%" height="800px"></iframe> -->
+
+<!-- <iframe src="{{site.baseurl}}/assets/pdf/resume.pdf" width="100%" height="800px"></iframe> -->
+<!-- <a href="{{ site.baseurl }}/resume-viewer.html" target="_blank" rel="noopener">View Resume</a> -->
+
