@@ -1144,6 +1144,7 @@ footer .copyright {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 50% 50%;
+  background-color: #0078d483;
 }
 
 .post .post-content {
