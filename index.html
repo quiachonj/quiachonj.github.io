@@ -13,7 +13,7 @@ layout: main
     <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
     <div class="page-tag">
       {% for tag in page.tags %}
-      <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
+      <a href="{{post.url | prepend: site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
       {% endfor %}
     </div>
     <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read More</a>
