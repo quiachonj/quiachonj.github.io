@@ -1507,14 +1507,14 @@ a.newer-posts:hover {
 }
 
 .about .author-title {
-  font-size:80%;
-  line-height: 1.4;
+  font-size:90%;
+  line-height: 1.8;
   color: #555; /* Optional for softer tone */
 }
 
 .about .author-about {
-  font-size:80%;
-  line-height: 1.4;
+  font-size:90%;
+  line-height: 1.8;
   color: #555; /* Optional for softer tone */
 }
 
