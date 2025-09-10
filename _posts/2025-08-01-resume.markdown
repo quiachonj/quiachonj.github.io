@@ -3,7 +3,7 @@ layout: post
 title: Resume
 date: 2025-08-01 00:00:00
 description: # Add post description (optional)
-img: undraw_agreement_w6ua.svg # Add image post (optional)
+img: undraw_programming_65t2.svg # Add image post (optional)
 fig-caption: Resume # Add figcaption (optional)
 tags: [Resume, Software Development, Full Stack Developer]
 ---
