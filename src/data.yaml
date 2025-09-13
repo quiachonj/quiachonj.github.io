@@ -1,0 +1,144 @@
+---
+
+name: Josh Quiachon
+titleOne: Full-Stack Developer (.NET)
+titleTwo: Azure Cloud Developer
+titleThr: Solutions Architect
+email: josh@quiachonj.us
+phone: +1 (646)600-8732
+website: dev.quiachonj.us
+linkedin: https://linkedin.com/in/quiachonj
+github: https://github.com/quiachonj
+twitter: ''
+location: New York, NY
+birthday: ''
+summary: >
+  Hello! I am a Software Engineer with over 15 years of experience designing, modernizing, and scaling enterprise applications across cloud, desktop, and web platforms. Expert in the .NET ecosystem and Microsoft Azure, with a track record of leading modernization efforts, driving performance improvements, and delivering resilient architectures. Adept at mentoring teams, influencing technical direction, and partnering with stakeholders to deliver solutions that balance reliability, scalability, and cost efficiency.
+experience:
+  - title: Independent Azure Consultant
+    company: Amberlogica
+    location: Remote, US
+    startDate: Oct 2024
+    endDate: Present
+    description:
+      - Designed and delivered billing/accounting system on Azure App Services + ASP.NET Core + EF Core, exposing secure REST APIs.
+      - Built workflows with Azure SQL, Cosmos DB, Blob Storage, Service Bus, Queue Storage, Functions, and Redis to support scalable, message-driven billing and document automation operations.
+      - Automated deployments and managed CI/CD pipelines with Azure DevOps.
+      - Developed Power BI dashboards for real-time reporting.
+      - Partnered with stakeholders to streamline workflows, accelerating delivery cycles.
+  - title: Senior .Net Full Stack Developer
+    company: United Welfare Fund
+    location: New Rochel, NY
+    startDate: Feb 2009
+    endDate: Nov 2023
+    description:
+        - Modernized mission-critical operations by migrating legacy systems to ASP.NET Core + Blazor WebAssembly on Azure, improving UX and maintainability.
+        - Led the development and design of five core features of the enterprise application.
+        - Built modular UI components and APIs to accelerate feature delivery while ensuring design consistency.
+        - Architected Azure Functions for serverless automation (document processing, annual dividend calculations).
+        - Leveraged Azure Service Bus and Cosmos DB for scalable, fault-tolerant workflows.
+        - Delivered near real-time analytics with Power BI, SSRS, and Data Factory ETL pipelines.
+        - Deployed cloud-native services via Azure App Services, Containers, ensuring elastic scalability.
+        - Migrated AS400 RPG code to C# with WPF + EF, migrated DB2 workloads into SQL Server.
+        - Designed WPF MVVM-based desktop framework with lifecycle management, PDF automation, and multi-department workflow optimizations.
+        - Reduced technical debt and cut feature delivery cycles by 70% through componentized frameworks and standardized workflows.
+  - title: Software Development Engineer in Test
+    company: Microsoft
+    location: Redmond, WA
+    startDate: Jan 2008
+    endDate: Feb 2009
+    description:
+        - Developed a UI test automation framework in C# with Microsoft UI Automation, increasing coverage and reducing regression testing cycles.
+        - Authored and maintained automated test scripts with the Perseus harness to ensure compatibility across builds.
+        - Implemented language-neutral test processes for both globalized and localized product versions, expanding automation reach.
+        - Validated functional consistency on multilingual environments, preventing region-specific defects.
+highlights:
+  - title: Billing Service Orchestrations
+    description:
+      - Reduced downtime by 62% and improved throughput with event-driven services and Azure Service Bus.
+      - item2.
+  - title: Document Automation Service
+    description:
+      - Delivered audit-ready workflows and on-time document automation and reporting via Cosmos DB + Redis + Azure Functions.
+      - item 2
+  - title: Legacy Modernization
+    description:
+      - Migrated AS400 → Blazor + Azure; eliminated technical debt and greatly improved overall UI and UX.
+      - item 2
+  - title: Cloud-Native ETL/ELT
+    description:
+      - Reduced data latency from 12 min → 15 sec with Data Factory CDC pipelines + Redis caching.
+      - item 2
+education:
+  - schoolName: MIU
+    degreeType: Master of Science
+    fieldOfStudy: Computer Science
+    location: Fairfield, IA
+    startDate: Apr 2007 
+    endDate: Oct 2009
+projects:
+  - title: Lorem Ipsum
+    description: amet consectetur adipisicing
+    href: https://google.de
+    imagePath: /src/assets/coming-soon.png
+  - title: Lorem Ipsum
+    description: amet consectetur adipisicing
+    href: https://google.de
+    imagePath: /src/assets/coming-soon.png
+skills:
+  Languages: 
+    - C#
+    - TypeScript
+    - JavaScript
+    - SQL/T-SQL
+    - Python
+    - Java
+    - C++
+    - C
+  Frontend: 
+    - Blazor WebAssembly
+    - Blazor with SignalR
+    - React
+    - Angular
+    - Telerik UI
+    - HTML5
+    - CSS3
+  Backend & APIs: 
+    - ASP.NET Core
+    - Web API
+    - REST
+    - Entity Framework
+    - EF Core
+    - Dapper
+  Databases & Data Storage: 
+    - SQL Server
+    - PostgreSQL
+    - Cosmos DB
+    - Redis
+  Reporting and BI:
+    - SSRS
+    - SSIS
+    - Power BI
+  Cloud & DevOps: 
+    - Azure App Services
+    - Functions
+    - Storage
+    - Service Bus
+    - ADF
+  CI/CD & DevOps:
+    - Azure DevOps
+    - GitHub
+    - Docker
+  Testing & Tools: 
+    - xUnit
+    - NUnit
+    - Postman
+    - ReSharper
+    - StyleCop
+    - Jira
+    - Zendesk
+certifications:
+  - issuer: Microsoft
+    name: Azure Fundamentals (AZ-900)
+    lastTaken: Sept 2023
+    href: https://learn.microsoft.com/api/credentials/share/en-us/joshquiachon/489B5DB681919C30?sharingId=70A7C7DC591F337E

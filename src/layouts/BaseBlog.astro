@@ -1,0 +1,43 @@
+---
+import ThemeProvider from '@/components/ThemeProvider.astro';
+import ToTopButton from '@/components/ToTopButton.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Head from '@/components/layout/Head.astro';
+import HeaderBlog from '@/components/layout/HeaderBlog.astro';
+import { siteConfig } from '@/site.config';
+
+const {
+	meta: { articleDate, description = siteConfig.description, ogImage, title }
+} = Astro.props;
+---
+
+<html lang={siteConfig.lang} class="h-full">
+	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+
+	<body class="flex h-full justify-center bg-primary">
+		<ThemeProvider />
+		<main
+			class="flex w-screen flex-col items-center px-5 pt-5 font-satoshi leading-relaxed text-secondary-foreground md:px-0 lg:max-w-7xl"
+		>
+			<HeaderBlog />
+			<div class="mt-5 w-full p-5 md:mt-[5.5rem]">
+				<slot />
+			</div>
+			<a
+				href="https://3474070726452.gumroad.com/l/astro-resume-01"
+				class="z-100 fixed bottom-10 mt-16 inline-flex flex-row items-center gap-x-3 rounded-3xl border border-input bg-secondary px-10 py-2 text-sm text-primary shadow-sm transition-all hover:shadow-md"
+			>
+				<span class="relative flex items-center justify-center">
+					<span
+						class="border-accent-300 bg-accent-300 absolute inline-flex h-2 w-2 animate-ping rounded-full border opacity-75"
+					></span>
+					<span class="bg-accent-300 relative inline-flex h-2 w-2 rounded-full"></span>
+				</span>
+
+				<p class="text-lg font-bold">Get template 🚀</p>
+			</a>
+			<ToTopButton />
+			<Footer />
+		</main>
+	</body>
+</html>

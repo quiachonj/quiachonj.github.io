@@ -1,0 +1,28 @@
+---
+import SidebarLeft from '@/components/SidebarLeft.astro';
+import About from '@/components/cv/About.astro';
+import Certification from '@/components/cv/Certification.astro';
+import Education from '@/components/cv/Education.astro';
+import Experience from '@/components/cv/Experience.astro';
+import Skill from '@/components/cv/Skill.astro';
+import Base from '../layouts/Base.astro';
+import Highlights from '@/components/cv/Highlights.astro';
+---
+
+<Base meta={{ title: 'Home' }}>
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+		<SidebarLeft />
+		<div class="md:col-span-2 md:mr-5">
+			<div
+				class="mt-5 rounded-2xl border border-transparent bg-background-tertiary p-5 md:mt-[5.5rem]"
+			>
+				<About />
+				<Experience />
+				<Education />
+				<Certification />
+				<Highlights />
+				<Skill />
+			</div>
+		</div>
+	</div>
+</Base>

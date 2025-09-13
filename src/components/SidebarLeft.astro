@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait.png';
+import Card from './Card.astro';
+import IconText from './IconText.astro';
+import IconWrapper from './IconWrapper.astro';
+import data from '../data.yaml';
+
+const titles = [data.titleOne, data.titleTwo, data.titleThr];
+const links = [
+	{ href: data.github, icon: 'github', label: 'github' },
+	{ href: data.linkedin, icon: 'linkedin', label: 'linkedin' },
+	{ href: `mailto:${data.email}`, icon: 'mail', label: 'email' }
+];
+---
+
+<aside
+	class="top-5 flex flex-col items-center justify-center pt-16 md:sticky md:col-span-1 md:h-screen md:pl-5"
+>
+	<Image
+		src={portrait}
+		alt="profile photo"
+		class="z-10 h-52 w-auto rounded-3xl bg-accent-200 p-1"
+		loading="lazy"
+	/>
+
+	<Card class="mt-[-6rem] w-full max-w-[500px] bg-background-tertiary p-5">
+		<div class="flex flex-col items-center gap-y-4 pb-10 pt-24">
+			<h1 class="text-3xl font-bold text-secondary-foreground">{data.name}</h1>
+
+			<div class="flex flex-col items-center space-y-1">
+				{titles.map((title) => <h2 class="text-m text-secondary-foreground">{title}</h2>)}
+			</div>
+
+			<Card
+				class="flex w-full flex-col gap-y-3 bg-background-secondary p-5 text-secondary-foreground"
+			>
+				<IconText title="Phone" subTitle={data.phone} icon="phone" />
+				<div class="border-t border-border"></div>
+				<IconText title="Location" subTitle={data.location} icon="location" />
+				<div class="border-t border-border"></div>
+
+				<div class="flex items-center justify-center gap-4 py-1">
+					{
+						links.map(({ href, icon, label }) => (
+							<a
+								href={href}
+								target={label !== 'email' ? '_blank' : undefined}
+								rel={label !== 'email' ? 'noopener noreferrer' : undefined}
+								aria-label={label}
+							>
+								<IconWrapper href={href} icon={icon} classIcon="h-5 w-5" class="bg-accent-200" />
+							</a>
+						))
+					}
+				</div>
+			</Card>
+
+			<a
+				href="/cv-download.pdf"
+				target="_blank"
+				class="hover:shadow-background-tertiary/40 flex items-center justify-center gap-x-3 rounded-3xl bg-accent-200 px-4 py-2 text-sm transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30"
+			>
+				<p class="text-lg font-bold">Download Resume</p>
+			</a>
+		</div>
+	</Card>
+</aside>

@@ -1,0 +1,20 @@
+---
+import CertificationCard from '../CertificationCard.astro';
+import Section from '../Section.astro';
+import data from '../../data.yaml';
+import { CertificationType } from '@/types';
+---
+
+<Section id="certifications" title="Certifications">
+	{
+		data.certifications.map(({ issuer, name, lastTaken, href }: CertificationType) => (
+			<CertificationCard
+				class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
+				issuer={issuer}
+				name={name}
+				lastTaken={lastTaken}
+				href={href}
+			/>
+		))
+	}
+</Section>

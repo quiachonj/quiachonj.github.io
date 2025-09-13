@@ -1,0 +1,25 @@
+---
+import Section from '../Section.astro';
+import data from '../../data.yaml';
+import { EducationType } from '@/types';
+import { defaultErrorMap } from 'astro:schema';
+import EducationCard from '../EducationCard.astro';
+---
+
+<Section id="education" title="Education">
+	{
+		data.education.map((educationType: EducationType) => (
+			<>
+				<EducationCard
+					class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
+					schoolName={educationType.schoolName}
+					degreeType={educationType.degreeType}
+					fieldOfStudy={educationType.fieldOfStudy}
+					location={educationType.location}
+					startDate={educationType.startDate}
+					endDate={educationType.endDate}
+				></EducationCard>
+			</>
+		))
+	}
+</Section>

@@ -1,0 +1,21 @@
+---
+import { cn } from '@/utils';
+
+const {
+	as: Tag = 'div',
+	class: className = ' border border-border px-5 py-3',
+	href,
+	title
+} = Astro.props;
+---
+
+<Tag
+	class={cn(className, 'relative rounded-2xl', href && 'transition-all hover:shadow-sm')}
+	href={href}
+	target="_blank"
+>
+	<div class="flex flex-col gap-y-1.5">
+		{title ? (<h1 class="text-lg font-medium text-secondary-foreground">{title}</h1>) : null}
+		<slot />
+	</div>
+</Tag>

@@ -1,0 +1,12 @@
+---
+import data from '../../data.yaml';
+const year = new Date();
+---
+
+<footer class="mx-auto mt-24 w-full px-5">
+	<div class="border-t border-border py-5">
+		<div class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0">
+			<div class="text-center md:text-right">© {year.getFullYear()} {data.name}</div>
+		</div>
+	</div>
+</footer>
