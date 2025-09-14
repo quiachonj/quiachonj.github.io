@@ -39,7 +39,7 @@ export default defineConfig({
 	devToolbar: {
 		enabled: false
 	},
-	site: 'https:dev.quiachonj.us',
+	site: 'https://dev.quiachonj.us',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
