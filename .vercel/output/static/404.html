@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en-US" class="h-full scroll-smooth"> <head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible"><title>404 • josh quiachon</title><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>"><!-- <link rel='preload' href='/fonts/Satoshi-Variable.ttf' as='font' type='font/ttf' crossorigin />
+	<link
+		rel='preload'
+		href='/fonts/Satoshi-VariableItalic.ttf'
+		as='font'
+		type='font/ttf'
+		crossorigin
+	/>
+	<link rel='preload' href='/fonts/ClashDisplay-Variable.ttf' as='font' type='font/ttf' crossorigin /> --><link rel="canonical" href="http://quiachonj.github.io/404/"><meta content="404 • josh quiachon" name="title"><meta content="Not found" name="description"><meta content="josh quiachon" name="author"><meta content="" name="theme-color"><meta content="website" property="og:type"><meta content="404" property="og:title"><meta content="Not found" property="og:description"><meta content="http://quiachonj.github.io/404/" property="og:url"><meta content="josh quiachon" property="og:site_name"><meta content="en_US" property="og:locale"><meta content="http://quiachonj.github.io/social-card.png" property="og:image"><meta content="1200" property="og:image:width"><meta content="630" property="og:image:height"><meta content="summary_large_image" property="twitter:card"><meta content="http://quiachonj.github.io/404/" property="twitter:url"><meta content="404" property="twitter:title"><meta content="Not found" property="twitter:description"><meta content="http://quiachonj.github.io/social-card.png" property="twitter:image"><link href="/sitemap-index.xml" rel="sitemap"><link href="/rss.xml" rel="alternate" title="josh quiachon" type="application/rss+xml"><meta content="Astro v5.13.7" name="generator"><link rel="stylesheet" href="/_astro/index.CdZ_4f4t.css"><script type="module" src="/_astro/page.BBc6vbNQ.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script></head><body class="flex h-full justify-center bg-background bg-[url('/black.svg')] bg-cover bg-fixed dark:bg-[url('/black.svg')]"> <script>
+	const lightModePref = window.matchMedia('(prefers-color-scheme: light)');
+
+	// Get user preference from local storage or from browser preference
+	function getUserPref() {
+		const storedTheme = localStorage.getItem('theme') ?? undefined;
+		return storedTheme || (lightModePref.matches ? 'light' : 'dark');
+	}
+
+	function setTheme(newTheme) {
+		if (newTheme !== 'light' && newTheme !== 'dark') {
+			return console.log(`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`);
+		}
+
+		localStorage.setItem('theme', newTheme);
+
+		const root = document.documentElement;
+
+		// if current dark theme and new theme is dark, return
+		if (newTheme === 'dark' && root.classList.contains('dark')) {
+			return;
+		} else if (newTheme === 'light' && !root.classList.contains('dark')) {
+			return;
+		}
+
+		root.classList.toggle('dark');
+	}
+
+	// Initial Setup
+	setTheme(getUserPref());
+
+	// View Transitions hook to restore theme
+	document.addEventListener('astro:after-swap', () => setTheme(getUserPref()));
+
+	// Listen for theme-change custom event
+	document.addEventListener('theme-change', (e) => {
+		setTheme(e.detail.theme);
+	});
+
+	// Listen for prefers-color-scheme change
+	lightModePref.addEventListener('change', (e) => setTheme(e.matches ? 'light' : 'dark'));
+</script> <main class="flex w-screen flex-col items-center px-5 pt-5 font-satoshi leading-relaxed md:px-0 lg:max-w-7xl"> <header class="lg:max-w-7xl w-full md:fixed z-20 md:px-5"> <nav class="grid grid-cols-1 md:grid-cols-3" aria-label="global" x-data="{ open: false }"> <div class="col-span-1 flex items-start justify-between"> <a href="/" aria-label="josh-quiachon" class="flex-none text-2xl font-semibold uppercase"> <!-- josh<span class="text-accent-300">quia</span>chon -->
+josh quiachon
+</a> <div class="flex items-center gap-2"> <button id="toggleDarkMode" class="rounded-md border border-border bg-background-tertiary p-1.5 transition-all hover:bg-accent-300 md:mr-5"> <span class="sr-only">Dark Theme</span> <svg class="h-[1.2rem] w-[1.2rem] transition-all hover:text-white dark:hidden dark:-rotate-90 dark:scale-0" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15..."></path> </svg> <svg class="hidden h-[1.2rem] w-[1.2rem] text-white transition-all dark:block dark:rotate-0 dark:scale-100" viewBox="0 0 24 24" fill="currentColor"> <path d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27..."></path> </svg> </button> <button id="toggleMobileMenu" class="top-5 rounded-md border border-border bg-background-tertiary p-1.5 shadow-xl transition-all hover:bg-accent-300 dark:shadow-black/50 md:hidden" x-on:click="open = !open"> <span class="sr-only">Menu</span> <svg width="1em" height="1em" x-show="!open" class="h-[1.2rem] w-[1.2rem] transition-all dark:text-white" data-icon="menu">   <symbol id="ai:local:menu" viewBox="0 0 50 50"><path fill="currentColor" d="M3 9a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2zm0 15a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2zm0 15a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2z"/></symbol><use href="#ai:local:menu"></use>  </svg> <svg width="1em" height="1em" x-show="open" class="h-[1.2rem] w-[1.2rem] transition-all dark:text-white" data-icon="close">   <symbol id="ai:local:close" viewBox="0 0 50 50"><path fill="currentColor" d="M7.719 6.281 6.28 7.72 23.563 25 6.28 42.281l1.44 1.439L25 26.438l17.281 17.28 1.438-1.437L26.438 25l17.28-17.281-1.437-1.438L25 23.563Z"/></symbol><use href="#ai:local:close"></use>  </svg> </button> </div> </div> <nav id="mobile_menu" x-collapse x-show="open" x-transition class="mt-1.5 flex flex-col items-center gap-4 rounded-xl bg-background-tertiary p-5 text-secondary-foreground shadow-xl dark:shadow-black/50 md:hidden"> <a href="#" aria-label="About Me" class="text-[1.05rem] font-medium hover:text-accent-300"> About Me </a><a href="#experience" aria-label="Experience" class="text-[1.05rem] font-medium hover:text-accent-300"> Experience </a><a href="#education" aria-label="Education" class="text-[1.05rem] font-medium hover:text-accent-300"> Education </a><a href="#certifications" aria-label="Certifications" class="text-[1.05rem] font-medium hover:text-accent-300"> Certifications </a><a href="#highlights" aria-label="Highlights" class="text-[1.05rem] font-medium hover:text-accent-300"> Highlights </a><a href="#skills" aria-label="Skills" class="text-[1.05rem] font-medium hover:text-accent-300"> Skills </a> </nav> <div class="z-10 col-span-2 mb-5 hidden flex-row justify-between rounded-2xl border border-transparent bg-background-tertiary p-5 text-secondary-foreground shadow-xl dark:shadow-black/50 md:flex"> <a href="#" aria-label="About Me" class="text-[1.05rem] font-medium hover:text-accent-300"> About Me </a><a href="#experience" aria-label="Experience" class="text-[1.05rem] font-medium hover:text-accent-300"> Experience </a><a href="#education" aria-label="Education" class="text-[1.05rem] font-medium hover:text-accent-300"> Education </a><a href="#certifications" aria-label="Certifications" class="text-[1.05rem] font-medium hover:text-accent-300"> Certifications </a><a href="#highlights" aria-label="Highlights" class="text-[1.05rem] font-medium hover:text-accent-300"> Highlights </a><a href="#skills" aria-label="Skills" class="text-[1.05rem] font-medium hover:text-accent-300"> Skills </a> </div> </nav> </header> <script type="module" src="/_astro/Header.astro_astro_type_script_index_0_lang.CfgA8aBT.js"></script>  <div class="flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 lg:px-8"> <h1 class="block text-7xl font-bold sm:text-9xl">404</h1> <p class="mt-3 text-muted-foreground">Well this is awkward.</p> <p class="">Sorry, we couldn't find your page.</p> <a class="mt-5 inline-flex items-center gap-x-1 rounded-lg bg-accent-200/30 text-secondary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input" href="/" data-astro-prefetch="true">  <p>Back to home</p> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="-scale-x-100"> <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path> </svg> </a> </div>  <div class="w-full text-primary-foreground"> <footer class="mx-auto mt-24 w-full px-5"> <div class="border-t border-border py-5"> <div class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0"> <div class="text-center md:text-right">© 2025 Josh Quiachon</div> </div> </div> </footer> </div> </main> </body></html>
