@@ -2,7 +2,7 @@
 import Section from '../Section.astro';
 import data from '../../data.yaml';
 import { EducationType } from '@/types';
-import { defaultErrorMap } from 'astro:schema';
+// import { defaultErrorMap } from 'astro:schema';
 import EducationCard from '../EducationCard.astro';
 ---
 
@@ -18,7 +18,7 @@ import EducationCard from '../EducationCard.astro';
 					location={educationType.location}
 					startDate={educationType.startDate}
 					endDate={educationType.endDate}
-				></EducationCard>
+				/>
 			</>
 		))
 	}

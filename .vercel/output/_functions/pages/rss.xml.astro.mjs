@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
-import { s as siteConfig } from '../chunks/site.config_qp5nQVpy.mjs';
-import { g as getAllPosts } from '../chunks/post_ugGMhQAO.mjs';
+import { s as siteConfig } from '../chunks/site.config_CIXcMLnL.mjs';
+import { g as getAllPosts } from '../chunks/post_D6Thz3ea.mjs';
 export { renderers } from '../renderers.mjs';
 
 const GET = async () => {
@@ -8,7 +8,7 @@ const GET = async () => {
   return rss({
     title: siteConfig.title,
     description: siteConfig.description,
-    site: "https://astro-resume-01.vercel.app",
+    site: "https:dev.quiachonj.us",
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,

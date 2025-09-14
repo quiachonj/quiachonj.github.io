@@ -1,7 +1,7 @@
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_7mBX0aCo.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Button_FccLSfLS.mjs';
-import { $ as $$Base } from '../chunks/Base_DMuK2IHb.mjs';
+import { $ as $$Button } from '../chunks/Button_C3yX7PdV.mjs';
+import { $ as $$Base } from '../chunks/Base_BUYbK5zT.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$404 = createComponent(($$result, $$props, $$slots) => {
@@ -9,7 +9,7 @@ const $$404 = createComponent(($$result, $$props, $$slots) => {
     description: "Not found",
     title: "404"
   };
-  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "meta": meta }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="px-4 py-10 flex flex-col justify-center items-center sm:px-6 lg:px-8 h-full"> <h1 class="block text-7xl font-bold sm:text-9xl">404</h1> <p class="mt-3 text-muted-foreground">Well this is awkward.</p> <p class="">Sorry, we couldn't find your page.</p> ${renderComponent($$result2, "Button", $$Button, { "title": "Back to home", "href": "/", "style": "button", "class": "mt-5" }, { "icon-after": ($$result3) => renderTemplate`<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="-scale-x-100"> <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path> </svg>` })} </div> ` })}`;
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "meta": meta }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 lg:px-8"> <h1 class="block text-7xl font-bold sm:text-9xl">404</h1> <p class="mt-3 text-muted-foreground">Well this is awkward.</p> <p class="">Sorry, we couldn't find your page.</p> ${renderComponent($$result2, "Button", $$Button, { "title": "Back to home", "href": "/", "style": "button", "class": "mt-5" }, { "icon-after": ($$result3) => renderTemplate`<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" class="-scale-x-100"> <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path> </svg>` })} </div> ` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/pages/404.astro", void 0);
 
 const $$file = "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/pages/404.astro";

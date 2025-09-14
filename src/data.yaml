@@ -1,9 +1,12 @@
 ---
 
 name: Josh Quiachon
-titleOne: Full-Stack Developer (.NET)
-titleTwo: Azure Cloud Developer
-titleThr: Solutions Architect
+title: 
+ - Software Engineer
+ - .Net Full-Stack Developer
+ - Azure Cloud Developer
+ - Solutions Architect
+ - Data Analyst
 email: josh@quiachonj.us
 phone: +1 (646)600-8732
 website: dev.quiachonj.us
@@ -13,7 +16,7 @@ twitter: ''
 location: New York, NY
 birthday: ''
 summary: >
-  Hello! I am a Software Engineer with over 15 years of experience designing, modernizing, and scaling enterprise applications across cloud, desktop, and web platforms. Expert in the .NET ecosystem and Microsoft Azure, with a track record of leading modernization efforts, driving performance improvements, and delivering resilient architectures. Adept at mentoring teams, influencing technical direction, and partnering with stakeholders to deliver solutions that balance reliability, scalability, and cost efficiency.
+  I am a senior software engineer specializing in .NET development with hands on experience building enterprise-scale applications across the web, cloud native, and desktop platforms. Skilled in C#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, and Azure services. Proven track record in modernizing legacy platforms and delivering cloud-native solutions with measurable business outcomes. Skilled at navigating complex project requirements, legacy systems, evolving architectural patterns, and collaborating with stakeholders to align project releases with business goals.
 experience:
   - title: Independent Azure Consultant
     company: Amberlogica
@@ -21,17 +24,21 @@ experience:
     startDate: Oct 2024
     endDate: Present
     description:
-      - Designed and delivered billing/accounting system on Azure App Services + ASP.NET Core + EF Core, exposing secure REST APIs.
-      - Built workflows with Azure SQL, Cosmos DB, Blob Storage, Service Bus, Queue Storage, Functions, and Redis to support scalable, message-driven billing and document automation operations.
-      - Automated deployments and managed CI/CD pipelines with Azure DevOps.
-      - Developed Power BI dashboards for real-time reporting.
-      - Partnered with stakeholders to streamline workflows, accelerating delivery cycles.
+      - project: SaaS Home and Healthcare Billing
+        responsibilities:
+        - Designed and developed core billing feature on Azure App Services + ASP.NET Core + EF Core, exposing secure REST APIs.
+        - Built initial workflows with Azure SQL, Cosmos DB, Blob Storage, Service Bus, Queue Storage, Functions, and Redis to support scalable, message-driven billing and document automation operations.
+        - Automated deployments and managed CI/CD pipelines with Azure DevOps.
+        - Developed Power BI dashboards for meaningful reporting.
+        - Partnered with stakeholders and product owners to streamline workflows and accelerate delivery cycles.
   - title: Senior .Net Full Stack Developer
     company: United Welfare Fund
     location: New Rochel, NY
     startDate: Feb 2009
     endDate: Nov 2023
     description:
+      - project: Enterprise Solution Development
+        responsibilities:
         - Modernized mission-critical operations by migrating legacy systems to ASP.NET Core + Blazor WebAssembly on Azure, improving UX and maintainability.
         - Led the development and design of five core features of the enterprise application.
         - Built modular UI components and APIs to accelerate feature delivery while ensuring design consistency.
@@ -39,6 +46,8 @@ experience:
         - Leveraged Azure Service Bus and Cosmos DB for scalable, fault-tolerant workflows.
         - Delivered near real-time analytics with Power BI, SSRS, and Data Factory ETL pipelines.
         - Deployed cloud-native services via Azure App Services, Containers, ensuring elastic scalability.
+      - project: AS400 Legacy Modernization
+        responsibilities:
         - Migrated AS400 RPG code to C# with WPF + EF, migrated DB2 workloads into SQL Server.
         - Designed WPF MVVM-based desktop framework with lifecycle management, PDF automation, and multi-department workflow optimizations.
         - Reduced technical debt and cut feature delivery cycles by 70% through componentized frameworks and standardized workflows.
@@ -48,27 +57,34 @@ experience:
     startDate: Jan 2008
     endDate: Feb 2009
     description:
-        - Developed a UI test automation framework in C# with Microsoft UI Automation, increasing coverage and reducing regression testing cycles.
-        - Authored and maintained automated test scripts with the Perseus harness to ensure compatibility across builds.
-        - Implemented language-neutral test processes for both globalized and localized product versions, expanding automation reach.
-        - Validated functional consistency on multilingual environments, preventing region-specific defects.
+        - project: Microsoft Online test automations
+          responsibilities:
+          - Developed a UI test automation framework in C# with Microsoft UI Automation, increasing coverage and reducing regression testing cycles.
+          - Authored and maintained automated test scripts with the Perseus harness to ensure compatibility across builds.
+          - Implemented language-neutral test processes for both globalized and localized product versions, expanding automation reach.
+          - Validated functional consistency on multilingual environments, preventing region-specific defects.
 highlights:
-  - title: Billing Service Orchestrations
+  - title: Legacy System Modernization
     description:
-      - Reduced downtime by 62% and improved throughput with event-driven services and Azure Service Bus.
-      - item2.
-  - title: Document Automation Service
+      - Led the multi-phase migration of mission-critical systems from AS400 and WPF platforms to modern ASP.NET Core, Blazor, and Azure cloud infrastructure, enhancing performance, usability, and long-term maintainability.
+  - title: Enterprise Application Development
     description:
-      - Delivered audit-ready workflows and on-time document automation and reporting via Cosmos DB + Redis + Azure Functions.
-      - item 2
-  - title: Legacy Modernization
+      - Designed and developed scalable, modular enterprise web applications using Blazor, .NET Core, Telerik UI, and RESTful Web APIs, delivering a modernized and responsive user experience.
+  - title: Desktop & MVVM Framework Design
     description:
-      - Migrated AS400 → Blazor + Azure; eliminated technical debt and greatly improved overall UI and UX.
-      - item 2
-  - title: Cloud-Native ETL/ELT
+      - Built a custom MVVM framework for WPF applications, handling state management, PDF generation, document scanning, and complex user workflows across multi-department use cases.
+  - title: Cloud-Native Architecture & Deployment
     description:
-      - Reduced data latency from 12 min → 15 sec with Data Factory CDC pipelines + Redis caching.
-      - item 2
+      - Implemented Azure-based solutions with App Services, Azure Functions, Containers, Blob Storage, Queue Storage, Azure Service Bus, Azure SQL, and CosmosDB to support scaling and reliable workflow.
+  - title: ETL
+    description: 
+      - Designed CDC-enabled ETL pipelines with Azure Data Factory and Redis Caching for high-load financial reporting requests.
+  - title: Reporting & BI Automation
+    description: 
+      - Delivered business insights by integrating SSRS and Power BI with operational data, enabling secure, role-based reporting for audit visibility.
+  - title: DevOps & Codebase Maintenance
+    description: 
+      - Maintained a clean and scalable codebase through CI/CD pipelines (Azure DevOps), issue tracking via Jira/Zendesk, and continuous refactoring aligned with evolving standards
 education:
   - schoolName: MIU
     degreeType: Master of Science
@@ -86,7 +102,7 @@ projects:
     href: https://google.de
     imagePath: /src/assets/coming-soon.png
 skills:
-  Languages: 
+  Languages and Scripts: 
     - C#
     - TypeScript
     - JavaScript
@@ -118,8 +134,9 @@ skills:
   Reporting and BI:
     - SSRS
     - SSIS
+    - MS Report Builder
     - Power BI
-  Cloud & DevOps: 
+  Azure Cloud: 
     - Azure App Services
     - Functions
     - Storage
@@ -137,6 +154,11 @@ skills:
     - StyleCop
     - Jira
     - Zendesk
+  Desktop Apps: 
+    - WPF
+    - WinForms
+    - MFC
+    - Win32 API
 certifications:
   - issuer: Microsoft
     name: Azure Fundamentals (AZ-900)

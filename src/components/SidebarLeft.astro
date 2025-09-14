@@ -2,11 +2,12 @@
 import { Image } from 'astro:assets';
 import portrait from '../assets/portrait.png';
 import Card from './Card.astro';
+import Button from './Button.astro';
 import IconText from './IconText.astro';
 import IconWrapper from './IconWrapper.astro';
 import data from '../data.yaml';
 
-const titles = [data.titleOne, data.titleTwo, data.titleThr];
+const titles = data.title ?? [];
 const links = [
 	{ href: data.github, icon: 'github', label: 'github' },
 	{ href: data.linkedin, icon: 'linkedin', label: 'linkedin' },
@@ -28,13 +29,18 @@ const links = [
 		<div class="flex flex-col items-center gap-y-4 pb-10 pt-24">
 			<h1 class="text-3xl font-bold text-secondary-foreground">{data.name}</h1>
 
-			<div class="flex flex-col items-center space-y-1">
-				{titles.map((title) => <h2 class="text-m text-secondary-foreground">{title}</h2>)}
-			</div>
-
 			<Card
 				class="flex w-full flex-col gap-y-3 bg-background-secondary p-5 text-secondary-foreground"
 			>
+				<div class="flex flex-col space-y-1">
+					{
+						titles.map((title: string) => (
+							<h2 class="text-sm text-secondary-foreground">{title}</h2>
+						))
+					}
+				</div>
+
+				<div class="border-t border-border"></div>
 				<IconText title="Phone" subTitle={data.phone} icon="phone" />
 				<div class="border-t border-border"></div>
 				<IconText title="Location" subTitle={data.location} icon="location" />
@@ -45,8 +51,8 @@ const links = [
 						links.map(({ href, icon, label }) => (
 							<a
 								href={href}
-								target={label !== 'email' ? '_blank' : undefined}
-								rel={label !== 'email' ? 'noopener noreferrer' : undefined}
+								target={label === 'email' ? undefined : '_blank'}
+								rel={label === 'email' ? undefined : 'noopener noreferrer'}
 								aria-label={label}
 							>
 								<IconWrapper href={href} icon={icon} classIcon="h-5 w-5" class="bg-accent-200" />
@@ -54,15 +60,18 @@ const links = [
 						))
 					}
 				</div>
-			</Card>
 
-			<a
-				href="/cv-download.pdf"
-				target="_blank"
-				class="hover:shadow-background-tertiary/40 flex items-center justify-center gap-x-3 rounded-3xl bg-accent-200 px-4 py-2 text-sm transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30"
-			>
-				<p class="text-lg font-bold">Download Resume</p>
-			</a>
+				<div class="border-t border-border"></div>
+				<Button
+					as="a"
+					title="Download Resume"
+					style="pill"
+					href="/cv-download.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:shadow-background-tertiary/40 flex items-center justify-center gap-x-3 rounded-[5px] bg-accent-200 px-4 py-2 text-lg font-bold text-secondary-foreground transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30"
+				/>
+			</Card>
 		</div>
 	</Card>
 </aside>

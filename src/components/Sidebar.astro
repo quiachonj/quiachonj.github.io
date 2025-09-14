@@ -44,7 +44,9 @@ const allPosts = await getAllPosts();
 					/></a
 				>
 			</div>
-			<Card class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground">
+			<Card
+				class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
+			>
 				<IconText title="Phone" subTitle={data.phone} icon="phone" />
 				<div class="border-t border-border"></div>
 				<IconText title="Email" subTitle={data.email} icon="mail" />

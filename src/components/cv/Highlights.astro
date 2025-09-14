@@ -6,18 +6,20 @@ import { HighlightType } from '@/types';
 ---
 
 <Section id="highlights" title="Highlights">
-  <div class="space-y-4">
-    {data.highlights.map(({ title, description }: HighlightType) => (
-      <HighlightCard
-        title={title}
-        class="w-full flex flex-col gap-y-2 bg-background-secondary p-5 text-secondary-foreground"
-      >
-        <ul class="ml-4 list-disc space-y-1 text-muted-foreground">
-          {description.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </HighlightCard>
-    ))}
-  </div>
+	<div class="space-y-4">
+		{
+			data.highlights.map(({ title, description }: HighlightType) => (
+				<HighlightCard
+					title={title}
+					class="flex w-full flex-col gap-y-2 bg-background-secondary p-5 text-secondary-foreground"
+				>
+					<ul class="ml-4 list-disc space-y-1 text-muted-foreground">
+						{description.map((item) => (
+							<li>{item}</li>
+						))}
+					</ul>
+				</HighlightCard>
+			))
+		}
+	</div>
 </Section>

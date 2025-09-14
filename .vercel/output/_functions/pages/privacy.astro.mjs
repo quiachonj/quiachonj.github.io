@@ -1,6 +1,6 @@
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_7mBX0aCo.mjs';
 import 'kleur/colors';
-import { $ as $$BaseBlog } from '../chunks/BaseBlog_CbomOm66.mjs';
+import { $ as $$BaseBlog } from '../chunks/BaseBlog_B0mpCq3f.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Privacy = createComponent(($$result, $$props, $$slots) => {

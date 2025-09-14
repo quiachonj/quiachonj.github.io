@@ -9,20 +9,27 @@ import { ExperienceType } from '@/types';
 	{
 		data.experience.map(
 			({ company, title, location, startDate, endDate, description }: ExperienceType) => (
-					<ExperienceCard
-						class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
-						company={company}
-						title={title}
-						location={location}
-						startDate={startDate}
-						endDate={endDate}
-					>
-						<ul class="ml-4 list-disc text-muted-foreground">
-							{description.map((bullet) => (
-								<li>{bullet}</li>
-							))}
-						</ul>
-					</ExperienceCard>
+				<ExperienceCard
+					class="flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground"
+					company={company}
+					title={title}
+					location={location}
+					startDate={startDate}
+					endDate={endDate}
+				>
+					{description.map((entry) => (
+						<div class="mb-4">
+							<h3 class="text-sm font-semibold text-secondary-foreground">{entry.project}</h3>
+							{entry.responsibilities?.length ? (
+								<ul class="ml-4 list-disc text-muted-foreground">
+									{entry.responsibilities.map((bullet) => (
+										<li>{bullet}</li>
+									))}
+								</ul>
+							) : null}
+						</div>
+					))}
+				</ExperienceCard>
 			)
 		)
 	}

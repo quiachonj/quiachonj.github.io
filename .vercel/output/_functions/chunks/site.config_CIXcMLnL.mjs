@@ -66,7 +66,7 @@ class ImmutableDataStore {
    */
   static async fromModule() {
     try {
-      const data = await import('./_astro_data-layer-content_BD13DUXN.mjs');
+      const data = await import('./_astro_data-layer-content_D9fM5yT0.mjs');
       if (data.default instanceof Map) {
         return ImmutableDataStore.fromMap(data.default);
       }
@@ -98,7 +98,7 @@ function dataStoreSingleton() {
 }
 const globalDataStore = dataStoreSingleton();
 
-const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": "https://astro-resume-01.vercel.app", "SSR": true};
+const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": "https:dev.quiachonj.us", "SSR": true};
 function createCollectionToGlobResultMap({
   globResult,
   contentDir
@@ -225,7 +225,7 @@ const CONTENT_LAYER_IMAGE_REGEX = /__ASTRO_IMAGE_="([^"]+)"/g;
 async function updateImageReferencesInBody(html, fileName) {
   const { default: imageAssetMap } = await import('./content-assets_DleWbedO.mjs');
   const imageObjects = /* @__PURE__ */ new Map();
-  const { getImage } = await import('./_astro_assets_DcwwsiGP.mjs').then(n => n._);
+  const { getImage } = await import('./_astro_assets_CREhQ1Fc.mjs').then(n => n._);
   for (const [_full, imagePath] of html.matchAll(CONTENT_LAYER_IMAGE_REGEX)) {
     try {
       const decodedImagePath = JSON.parse(imagePath.replaceAll("&#x22;", '"'));
@@ -438,11 +438,11 @@ const getCollection = createGetCollection({
 
 const siteConfig = {
   // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-  author: "nicdun",
+  author: "josh quiachon",
   // Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-  title: "astro-resume-01",
+  title: "josh quiachon",
   // Meta property used as the default description meta property
-  description: "Perfect, minimal resume theme with multiple configuration option, blog integration and custom stylings. Stand tall among competitors and launch your career into orbit with Astro.js Theme Resume. Explore the cosmos of possibilities for your professional future today!",
+  description: "",
   // HTML lang property, found in src/layouts/Base.astro L:18
   lang: "en-US",
   // Meta property, found in src/components/BaseHead.astro L:42

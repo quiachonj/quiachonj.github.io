@@ -34,34 +34,34 @@ export type CvData = {
 	twitter: string;
 	location: string;
 	summary: string;
- 	experience: ExperienceType[];
+	experience: ExperienceType[];
 	education: EducationType[];
 	projects: ProjectType[];
 	skills: Record<string, string[]>[];
-	certifications: CertificationType[]; 
+	certifications: CertificationType[];
 };
 
 export type ExperienceType = {
 	title: string;
-    company: string;
-    location: string;
-    startDate: string;
+	company: string;
+	location: string;
+	startDate: string;
 	endDate: string;
-    description: string[];
+	description: Record<string, string[]>[];
 };
 
 export type EducationType = {
 	schoolName: string;
-    degreeType: string;
-    fieldOfStudy: string;
+	degreeType: string;
+	fieldOfStudy: string;
 	location: string;
-    startDate: string;
+	startDate: string;
 	endDate: string;
 };
 
 export type HighlightType = {
 	title: string;
-    description: string[];
+	description: string[];
 };
 
 export type ProjectType = {
@@ -69,11 +69,11 @@ export type ProjectType = {
 	description: string;
 	href: string;
 	imagePath: string;
-}
+};
 
 export type CertificationType = {
 	issuer: string;
 	name: string;
 	lastTaken: string;
 	href: string;
-}
+};

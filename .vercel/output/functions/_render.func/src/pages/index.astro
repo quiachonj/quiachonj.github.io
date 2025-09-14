@@ -1,35 +1,27 @@
 ---
-import Sidebar from '@/components/Sidebar.astro';
+import SidebarLeft from '@/components/SidebarLeft.astro';
 import About from '@/components/cv/About.astro';
 import Certification from '@/components/cv/Certification.astro';
 import Education from '@/components/cv/Education.astro';
 import Experience from '@/components/cv/Experience.astro';
-import Posts from '@/components/cv/Posts.astro';
-import Project from '@/components/cv/Project.astro';
 import Skill from '@/components/cv/Skill.astro';
-import Tool from '@/components/cv/Tool.astro';
-import { getAllPosts } from '@/utils';
 import Base from '../layouts/Base.astro';
-
-const allPosts = await getAllPosts();
+import Highlights from '@/components/cv/Highlights.astro';
 ---
 
 <Base meta={{ title: 'Home' }}>
 	<div class="grid grid-cols-1 gap-5 md:grid-cols-3">
-		<Sidebar />
+		<SidebarLeft />
 		<div class="md:col-span-2 md:mr-5">
 			<div
-				class="bg-background-tertiary mt-5 rounded-2xl border border-transparent p-5 md:mt-[5.5rem]"
+				class="mt-5 rounded-2xl border border-transparent bg-background-tertiary p-5 md:mt-[5.5rem]"
 			>
 				<About />
 				<Experience />
 				<Education />
-				<Project />
 				<Certification />
+				<Highlights />
 				<Skill />
-				<Tool />
-
-				{allPosts.length > 0 && <Posts posts={allPosts} />}
 			</div>
 		</div>
 	</div>

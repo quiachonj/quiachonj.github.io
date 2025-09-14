@@ -10,6 +10,7 @@ const allPosts = await getAllPosts();
 >
 	<Card class="mt-[-6rem] w-full max-w-[500px] bg-background-tertiary p-5">
 		<div class="flex flex-col items-center gap-y-4 pb-10 pt-24">
-		{allPosts.length > 0 && <Posts posts={allPosts} />}
+			{allPosts.length > 0 && <Posts posts={allPosts} />}
+		</div>
 	</Card>
 </aside>

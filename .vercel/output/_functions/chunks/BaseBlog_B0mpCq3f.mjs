@@ -1,0 +1,36 @@
+import { c as createComponent, m as maybeRenderHead, f as renderScript, a as renderTemplate, b as createAstro, d as addAttribute, r as renderComponent, e as renderSlot } from './astro/server_7mBX0aCo.mjs';
+import 'kleur/colors';
+import { c as cn, $ as $$Icon, a as $$Head, b as $$ThemeProvider, d as $$Footer } from './Icon_BRP9CsAV.mjs';
+import 'clsx';
+import { s as siteConfig } from './site.config_CIXcMLnL.mjs';
+
+const $$ToTopButton = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${maybeRenderHead()}<button aria-label="Back to Top" class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-secondary-foreground text-3xl text-primary-foreground opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12" data-show="false" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </button> ${renderScript($$result, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/ToTopButton.astro?astro&type=script&index=0&lang.ts")}`;
+}, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/ToTopButton.astro", void 0);
+
+const $$Astro$1 = createAstro("https:dev.quiachonj.us");
+const $$HeaderBlog = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$HeaderBlog;
+  const { class: className } = Astro2.props;
+  return renderTemplate`${maybeRenderHead()}<header${addAttribute(cn(
+    className,
+    "lg:max-w-7xl w-full md:fixed z-20 bg-background-tertiary text-secondary-foreground shadow-xl dark:shadow-black/50 border rounded-2xl border-none flex flex-col justify-center"
+  ), "class")} x-data="{ open: false }"> <nav class="grid grid-cols-2 p-5 md:grid-cols-3" aria-label="global"> <a class="flex flex-row items-center justify-start text-2xl font-semibold uppercase" href="/" aria-label="joshquiachon">josh<span class="text-accent-300">quia</span>chon<span class="text-accent-300">blog</span></a> <div class="col-span-1 flex flex-row items-center justify-end md:col-span-2"> <div class="z-10 hidden flex-row gap-5 pr-5 md:flex"> <a href="/" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="About">About
+</a> <a href="/blog" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="Blog">Blog
+</a> </div> <div> <button id="toggleDarkMode" class="rounded-md border border-border bg-background-tertiary p-1.5 transition-all hover:bg-accent-300"> <span class="sr-only">Dark Theme</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all hover:text-white dark:hidden dark:-rotate-90 dark:scale-0"><path fill="currentColor" d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="hidden h-[1.2rem] w-[1.2rem] rotate-90 scale-0 text-white transition-all dark:block dark:rotate-0 dark:scale-100"><path fill="currentColor" d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"></path></svg> </button> <button id="toggleMobileMenu" class="top-5 rounded-md border border-border bg-background-tertiary p-1.5 shadow-xl transition-all hover:bg-accent-300 dark:shadow-black/50 md:hidden" x-on:click="open = !open"> <span class="sr-only">Menu</span> ${renderComponent($$result, "Icon", $$Icon, { "name": "menu", "x-show": "!open", "class": "h-[1.2rem] w-[1.2rem] transition-all dark:text-white" })} ${renderComponent($$result, "Icon", $$Icon, { "name": "close", "x-show": "open", "class": "h-[1.2rem] w-[1.2rem] transition-all dark:text-white" })} </button> </div> </div> </nav> <nav id="mobile_menu" x-collapse x-show="open" x-transition class="mt-1.5 flex flex-grow flex-col items-center justify-between gap-4 rounded-xl bg-background-tertiary p-5 text-secondary-foreground shadow-xl dark:shadow-black/50 md:hidden"> <a href="/" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="About">About
+</a> <a href="/blog" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="Blog">Blog
+</a> </nav> </header> ${renderScript($$result, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/layout/HeaderBlog.astro?astro&type=script&index=0&lang.ts")}`;
+}, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/layout/HeaderBlog.astro", void 0);
+
+const $$Astro = createAstro("https:dev.quiachonj.us");
+const $$BaseBlog = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$BaseBlog;
+  const {
+    meta: { articleDate, description = siteConfig.description, ogImage, title }
+  } = Astro2.props;
+  return renderTemplate`<html${addAttribute(siteConfig.lang, "lang")} class="h-full"> ${renderComponent($$result, "Head", $$Head, { "articleDate": articleDate, "description": description, "ogImage": ogImage, "title": title })}${maybeRenderHead()}<body class="flex h-full justify-center bg-primary"> ${renderComponent($$result, "ThemeProvider", $$ThemeProvider, {})} <main class="flex w-screen flex-col items-center px-5 pt-5 font-satoshi leading-relaxed text-secondary-foreground md:px-0 lg:max-w-7xl"> ${renderComponent($$result, "HeaderBlog", $$HeaderBlog, {})} <div class="mt-5 w-full p-5 md:mt-[5.5rem]"> ${renderSlot($$result, $$slots["default"])} </div> <a href="https://3474070726452.gumroad.com/l/astro-resume-01" class="z-100 fixed bottom-10 mt-16 inline-flex flex-row items-center gap-x-3 rounded-3xl border border-input bg-secondary px-10 py-2 text-sm text-primary shadow-sm transition-all hover:shadow-md"> <span class="relative flex items-center justify-center"> <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-accent-300 bg-accent-300 opacity-75"></span> <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-300"></span> </span> <p class="text-lg font-bold">Get template 🚀</p> </a> ${renderComponent($$result, "ToTopButton", $$ToTopButton, {})} ${renderComponent($$result, "Footer", $$Footer, {})} </main> </body></html>`;
+}, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/layouts/BaseBlog.astro", void 0);
+
+export { $$BaseBlog as $, $$ToTopButton as a };
