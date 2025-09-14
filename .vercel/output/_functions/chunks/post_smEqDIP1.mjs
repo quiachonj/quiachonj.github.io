@@ -1,4 +1,4 @@
-import { g as getCollection } from './site.config_CIXcMLnL.mjs';
+import { g as getCollection } from './site.config_H-ENChsp.mjs';
 
 async function getAllPosts() {
   return await getCollection("post", ({ data }) => {

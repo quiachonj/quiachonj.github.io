@@ -1,6 +1,6 @@
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_7mBX0aCo.mjs';
 import 'kleur/colors';
-import { $ as $$BaseBlog } from '../chunks/BaseBlog_B0mpCq3f.mjs';
+import { $ as $$BaseBlog } from '../chunks/BaseBlog_01fH5pna.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Imprint = createComponent(($$result, $$props, $$slots) => {

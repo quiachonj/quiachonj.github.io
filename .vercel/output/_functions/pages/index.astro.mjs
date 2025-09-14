@@ -1,11 +1,11 @@
 import { b as createAstro, c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, e as renderSlot, F as Fragment, d as addAttribute } from '../chunks/astro/server_7mBX0aCo.mjs';
 import 'kleur/colors';
 import '../chunks/index_MaT6fT73.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_CREhQ1Fc.mjs';
-import { c as cn, $ as $$Icon, e as data } from '../chunks/Icon_BRP9CsAV.mjs';
-import '../chunks/site.config_CIXcMLnL.mjs';
-import { $ as $$Button } from '../chunks/Button_C3yX7PdV.mjs';
-import { $ as $$Base } from '../chunks/Base_BUYbK5zT.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_B13-o7lo.mjs';
+import { c as cn, $ as $$Icon, e as data } from '../chunks/Icon_BsCJOhkV.mjs';
+import '../chunks/site.config_H-ENChsp.mjs';
+import { $ as $$Button } from '../chunks/Button_CaHOqoOV.mjs';
+import { $ as $$Base } from '../chunks/Base_Bz3ihFkp.mjs';
 export { renderers } from '../renderers.mjs';
 
 const portrait = new Proxy({"src":"/_astro/portrait.B4aMzyOz.png","width":360,"height":321,"format":"png"}, {
@@ -21,7 +21,7 @@ const portrait = new Proxy({"src":"/_astro/portrait.B4aMzyOz.png","width":360,"h
 						}
 					});
 
-const $$Astro$8 = createAstro("https:dev.quiachonj.us");
+const $$Astro$8 = createAstro("https://dev.quiachonj.us");
 const $$Card = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Card;
@@ -36,7 +36,7 @@ const $$Card = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Tag", Tag, { "class": cn(className, "relative rounded-2xl", href && "transition-all hover:shadow-sm"), "href": href, "target": "_blank" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="flex flex-col gap-y-1.5"> ${heading || subheading || date ? renderTemplate`${renderComponent($$result2, "Fragment", Fragment, {}, { "default": ($$result3) => renderTemplate` <div class="flex flex-col gap-y-0.5"></div> <h1 class="text-lg font-medium text-secondary-foreground">${heading}</h1> <h2 class="text-muted-foreground">${subheading}</h2> <h2 class="text-sm text-accent-300">${date}</h2> ` })}` : null} ${renderSlot($$result2, $$slots["default"])} </div> ` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/Card.astro", void 0);
 
-const $$Astro$7 = createAstro("https:dev.quiachonj.us");
+const $$Astro$7 = createAstro("https://dev.quiachonj.us");
 const $$IconWrapper = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$IconWrapper;
@@ -48,7 +48,7 @@ const $$IconWrapper = createComponent(($$result, $$props, $$slots) => {
   ), "class")}> ${renderComponent($$result, "Icon", $$Icon, { "class": classIcon, "name": icon })} </div>`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/IconWrapper.astro", void 0);
 
-const $$Astro$6 = createAstro("https:dev.quiachonj.us");
+const $$Astro$6 = createAstro("https://dev.quiachonj.us");
 const $$IconText = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$IconText;
@@ -61,16 +61,16 @@ const $$IconText = createComponent(($$result, $$props, $$slots) => {
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/IconText.astro", void 0);
 
 const $$SidebarLeft = createComponent(($$result, $$props, $$slots) => {
-  const titles = [data.titleOne, data.titleTwo, data.titleThr];
+  const titles = data.title ?? [];
   const links = [
     { href: data.github, icon: "github", label: "github" },
     { href: data.linkedin, icon: "linkedin", label: "linkedin" },
     { href: `mailto:${data.email}`, icon: "mail", label: "email" }
   ];
-  return renderTemplate`${maybeRenderHead()}<aside class="top-5 flex flex-col items-center justify-center pt-16 md:sticky md:col-span-1 md:h-screen md:pl-5"> ${renderComponent($$result, "Image", $$Image, { "src": portrait, "alt": "profile photo", "class": "z-10 h-52 w-auto rounded-3xl bg-accent-200 p-1", "loading": "lazy" })} ${renderComponent($$result, "Card", $$Card, { "class": "mt-[-6rem] w-full max-w-[500px] bg-background-tertiary p-5" }, { "default": ($$result2) => renderTemplate` <div class="flex flex-col items-center gap-y-4 pb-10 pt-24"> <h1 class="text-3xl font-bold text-secondary-foreground">${data.name}</h1> <div class="flex flex-col items-center space-y-1"> ${titles.map((title) => renderTemplate`<h2 class="text-m text-secondary-foreground">${title}</h2>`)} </div> ${renderComponent($$result2, "Card", $$Card, { "class": "flex w-full flex-col gap-y-3 bg-background-secondary p-5 text-secondary-foreground" }, { "default": ($$result3) => renderTemplate` ${renderComponent($$result3, "IconText", $$IconText, { "title": "Phone", "subTitle": data.phone, "icon": "phone" })} <div class="border-t border-border"></div> ${renderComponent($$result3, "IconText", $$IconText, { "title": "Location", "subTitle": data.location, "icon": "location" })} <div class="border-t border-border"></div> <div class="flex items-center justify-center gap-4 py-1"> ${links.map(({ href, icon, label }) => renderTemplate`<a${addAttribute(href, "href")}${addAttribute(label === "email" ? void 0 : "_blank", "target")}${addAttribute(label === "email" ? void 0 : "noopener noreferrer", "rel")}${addAttribute(label, "aria-label")}> ${renderComponent($$result3, "IconWrapper", $$IconWrapper, { "href": href, "icon": icon, "classIcon": "h-5 w-5", "class": "bg-accent-200" })} </a>`)} </div> <div class="border-t border-border"></div> ${renderComponent($$result3, "Button", $$Button, { "as": "a", "title": "Download Resume", "style": "pill", "target": "_blank", "rel": "noopener noreferrer", "href": "/cv-download.pdf", "class": "hover:shadow-background-tertiary/40 flex items-center justify-center gap-x-3 rounded-[5px] bg-accent-200 px-4 py-2 text-lg font-bold text-secondary-foreground transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30" })} ` })} </div> ` })} </aside>`;
+  return renderTemplate`${maybeRenderHead()}<aside class="top-5 flex flex-col items-center justify-center pt-16 md:sticky md:col-span-1 md:h-screen md:pl-5"> ${renderComponent($$result, "Image", $$Image, { "src": portrait, "alt": "profile photo", "class": "z-10 h-52 w-auto rounded-3xl bg-accent-200 p-1", "loading": "lazy" })} ${renderComponent($$result, "Card", $$Card, { "class": "mt-[-6rem] w-full max-w-[500px] bg-background-tertiary p-5" }, { "default": ($$result2) => renderTemplate` <div class="flex flex-col items-center gap-y-4 pb-10 pt-24"> <h1 class="text-3xl font-bold text-secondary-foreground">${data.name}</h1> ${renderComponent($$result2, "Card", $$Card, { "class": "flex w-full flex-col gap-y-3 bg-background-secondary p-5 text-secondary-foreground" }, { "default": ($$result3) => renderTemplate` <div class="flex flex-col space-y-1"> ${titles.map((title) => renderTemplate`<h2 class="text-sm text-secondary-foreground">${title}</h2>`)} </div> <div class="border-t border-border"></div> ${renderComponent($$result3, "IconText", $$IconText, { "title": "Phone", "subTitle": data.phone, "icon": "phone" })} <div class="border-t border-border"></div> ${renderComponent($$result3, "IconText", $$IconText, { "title": "Location", "subTitle": data.location, "icon": "location" })} <div class="border-t border-border"></div> <div class="flex items-center justify-center gap-4 py-1"> ${links.map(({ href, icon, label }) => renderTemplate`<a${addAttribute(href, "href")}${addAttribute(label === "email" ? void 0 : "_blank", "target")}${addAttribute(label === "email" ? void 0 : "noopener noreferrer", "rel")}${addAttribute(label, "aria-label")}> ${renderComponent($$result3, "IconWrapper", $$IconWrapper, { "href": href, "icon": icon, "classIcon": "h-5 w-5", "class": "bg-accent-200" })} </a>`)} </div> <div class="border-t border-border"></div> ${renderComponent($$result3, "Button", $$Button, { "as": "a", "title": "Download Resume", "style": "pill", "href": "/cv-download.pdf", "target": "_blank", "rel": "noopener noreferrer", "class": "hover:shadow-background-tertiary/40 flex items-center justify-center gap-x-3 rounded-[5px] bg-accent-200 px-4 py-2 text-lg font-bold text-secondary-foreground transition-all hover:shadow-md dark:shadow-black/50 hover:dark:shadow-white/30" })} ` })} </div> ` })} </aside>`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/SidebarLeft.astro", void 0);
 
-const $$Astro$5 = createAstro("https:dev.quiachonj.us");
+const $$Astro$5 = createAstro("https://dev.quiachonj.us");
 const $$Section = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Section;
@@ -82,7 +82,7 @@ const $$About = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Section", $$Section, { "title": "About Me" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<p class="text-muted-foreground"> ${data.summary} </p> ` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/cv/About.astro", void 0);
 
-const $$Astro$4 = createAstro("https:dev.quiachonj.us");
+const $$Astro$4 = createAstro("https://dev.quiachonj.us");
 const $$CertificationCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$CertificationCard;
@@ -102,7 +102,7 @@ const $$Certification = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Section", $$Section, { "id": "certifications", "title": "Certifications" }, { "default": ($$result2) => renderTemplate`${data.certifications.map(({ issuer, name, lastTaken, href }) => renderTemplate`${renderComponent($$result2, "CertificationCard", $$CertificationCard, { "class": "flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground", "issuer": issuer, "name": name, "lastTaken": lastTaken, "href": href })}`)}` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/cv/Certification.astro", void 0);
 
-const $$Astro$3 = createAstro("https:dev.quiachonj.us");
+const $$Astro$3 = createAstro("https://dev.quiachonj.us");
 const $$EducationCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$EducationCard;
@@ -124,7 +124,7 @@ const $$Education = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Section", $$Section, { "id": "education", "title": "Education" }, { "default": ($$result2) => renderTemplate`${data.education.map((educationType) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, {}, { "default": ($$result3) => renderTemplate` ${renderComponent($$result3, "EducationCard", $$EducationCard, { "class": "flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground", "schoolName": educationType.schoolName, "degreeType": educationType.degreeType, "fieldOfStudy": educationType.fieldOfStudy, "location": educationType.location, "startDate": educationType.startDate, "endDate": educationType.endDate })} ` })}`)}` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/cv/Education.astro", void 0);
 
-const $$Astro$2 = createAstro("https:dev.quiachonj.us");
+const $$Astro$2 = createAstro("https://dev.quiachonj.us");
 const $$ExperienceCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$ExperienceCard;
@@ -143,11 +143,11 @@ const $$ExperienceCard = createComponent(($$result, $$props, $$slots) => {
 
 const $$Experience = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Section", $$Section, { "id": "experience", "title": "Experience" }, { "default": ($$result2) => renderTemplate`${data.experience.map(
-    ({ company, title, location, startDate, endDate, description }) => renderTemplate`${renderComponent($$result2, "ExperienceCard", $$ExperienceCard, { "class": "flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground", "company": company, "title": title, "location": location, "startDate": startDate, "endDate": endDate }, { "default": ($$result3) => renderTemplate` ${maybeRenderHead()}<ul class="ml-4 list-disc text-muted-foreground"> ${description.map((bullet) => renderTemplate`<li>${bullet}</li>`)} </ul> ` })}`
+    ({ company, title, location, startDate, endDate, description }) => renderTemplate`${renderComponent($$result2, "ExperienceCard", $$ExperienceCard, { "class": "flex w-full flex-col gap-x-7 gap-y-1 bg-background-secondary p-5 text-secondary-foreground", "company": company, "title": title, "location": location, "startDate": startDate, "endDate": endDate }, { "default": ($$result3) => renderTemplate`${description.map((entry) => renderTemplate`${maybeRenderHead()}<div class="mb-4"> <h3 class="text-sm font-semibold text-secondary-foreground">${entry.project}</h3> ${entry.responsibilities?.length ? renderTemplate`<ul class="ml-4 list-disc text-muted-foreground"> ${entry.responsibilities.map((bullet) => renderTemplate`<li>${bullet}</li>`)} </ul>` : null} </div>`)}` })}`
   )}` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/cv/Experience.astro", void 0);
 
-const $$Astro$1 = createAstro("https:dev.quiachonj.us");
+const $$Astro$1 = createAstro("https://dev.quiachonj.us");
 const $$SkillLayout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$SkillLayout;
@@ -159,7 +159,7 @@ const $$Skill = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Section", $$Section, { "id": "skills", "title": "Skills" }, { "default": ($$result2) => renderTemplate`${Object.keys(data.skills).map((category) => renderTemplate`${renderComponent($$result2, "SkillLayout", $$SkillLayout, { "title": category, "skills": data.skills[category] })}`)}` })}`;
 }, "C:/Users/jusoa/Documents/github/dev.quiachonj.us/src/components/cv/Skill.astro", void 0);
 
-const $$Astro = createAstro("https:dev.quiachonj.us");
+const $$Astro = createAstro("https://dev.quiachonj.us");
 const $$HighlightCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$HighlightCard;

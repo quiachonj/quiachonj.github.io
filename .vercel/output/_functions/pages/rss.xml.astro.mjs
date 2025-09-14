@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
-import { s as siteConfig } from '../chunks/site.config_CIXcMLnL.mjs';
-import { g as getAllPosts } from '../chunks/post_D6Thz3ea.mjs';
+import { s as siteConfig } from '../chunks/site.config_H-ENChsp.mjs';
+import { g as getAllPosts } from '../chunks/post_smEqDIP1.mjs';
 export { renderers } from '../renderers.mjs';
 
 const GET = async () => {
@@ -8,7 +8,7 @@ const GET = async () => {
   return rss({
     title: siteConfig.title,
     description: siteConfig.description,
-    site: "https:dev.quiachonj.us",
+    site: "https://dev.quiachonj.us",
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
