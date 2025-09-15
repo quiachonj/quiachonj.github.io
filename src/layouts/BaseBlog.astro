@@ -7,12 +7,12 @@ import HeaderBlog from '@/components/layout/HeaderBlog.astro';
 import { siteConfig } from '@/site.config';
 
 const {
-	meta: { articleDate, description = siteConfig.description, ogImage, title }
+	meta: { articleDate, description = siteConfig.description, ogImage, title}
 } = Astro.props;
 ---
 
 <html lang={siteConfig.lang} class="h-full">
-	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title}/>
 
 	<body class="flex h-full justify-center bg-primary">
 		<ThemeProvider />
@@ -23,19 +23,6 @@ const {
 			<div class="mt-5 w-full p-5 md:mt-[5.5rem]">
 				<slot />
 			</div>
-			<a
-				href="https://3474070726452.gumroad.com/l/astro-resume-01"
-				class="z-100 fixed bottom-10 mt-16 inline-flex flex-row items-center gap-x-3 rounded-3xl border border-input bg-secondary px-10 py-2 text-sm text-primary shadow-sm transition-all hover:shadow-md"
-			>
-				<span class="relative flex items-center justify-center">
-					<span
-						class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-accent-300 bg-accent-300 opacity-75"
-					></span>
-					<span class="relative inline-flex h-2 w-2 rounded-full bg-accent-300"></span>
-				</span>
-
-				<p class="text-lg font-bold">Get template 🚀</p>
-			</a>
 			<ToTopButton />
 			<Footer />
 		</main>
