@@ -78,7 +78,7 @@ highlights:
       - Implemented Azure-based solutions with App Services, Azure Functions, Containers, Blob Storage, Queue Storage, Azure Service Bus, Azure SQL, and CosmosDB to support scaling and reliable workflow.
   - title: ETL
     description: 
-      - Designed CDC-enabled ETL pipelines with Azure Data Factory and Redis Caching for high-load financial reporting requests.
+      - Designed CDC-enabled ETL pipelines with Azure Data Factory, Azure SQL source to CosmosDB sink with Redis Caching for denormalized data used on high-load financial reporting requests.
   - title: Reporting & BI Automation
     description: 
       - Delivered business insights by integrating SSRS and Power BI with operational data, enabling secure, role-based reporting for audit visibility.
@@ -119,14 +119,15 @@ skills:
     - Telerik UI
     - HTML5
     - CSS3
-  Backend & APIs: 
+  Backend and Web APIs: 
     - ASP.NET Core
-    - Web API
-    - REST
+    - RESTful Web API
+    - Node.js
+  ORM:
     - Entity Framework
     - EF Core
     - Dapper
-  Databases & Data Storage: 
+  Databases(SQL and NoSQL): 
     - SQL Server
     - PostgreSQL
     - Cosmos DB
@@ -139,8 +140,9 @@ skills:
   Azure Cloud: 
     - Azure App Services
     - Functions
-    - Storage
+    - Blob Storage
     - Service Bus
+    - Queue Storage
     - ADF
   CI/CD & DevOps:
     - Azure DevOps

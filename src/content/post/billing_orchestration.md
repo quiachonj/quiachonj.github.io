@@ -13,7 +13,10 @@ tags: [Software Architecture, Full Stack Development, Software Engineering]
 
 As organizations scale, billing complexity tends to grow with them. Multiple systems, each with its own cadence, logic, and data model, often coexist across business units. Creating fragmented customer experiences and operational inefficiencies. Manual reconciliation, brittle integrations, and delayed invoicing become the norm. The challenge isn’t just technical. It’s strategic: how do you unify billing across diverse systems without compromising availability or introducing rigid dependencies?
 
-## Billing Consolidation and Orchestration at Scale, Modern Billing Without the Bloat
+## Billing Consolidation 
+
+>Billing Orchestration at Scale, Modern Billing Without the Bloat
+
 For smaller companies or those with specialized billing needs, traditional ERP platforms like Microsoft Dynamics or PeopleSoft often feel like overkill. Costly, rigid, and slow to evolve. These teams need systems that work with them, not against them: lightweight, modular, and built to flex around unique workflows. I architect orchestration layers that support this agility. Leveraging loosely coupled services, event-driven triggers, and cloud-native components that scale with demand but remain lean enough for rapid iteration. Whether billing is usage-based, subscription-driven, or entirely custom, the infrastructure adapts without locking teams into heavyweight tooling or vendor dependencies.
 
 ### The Challenge
