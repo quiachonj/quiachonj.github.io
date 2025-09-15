@@ -7,6 +7,9 @@ import Experience from '@/components/cv/Experience.astro';
 import Skill from '@/components/cv/Skill.astro';
 import Base from '../layouts/Base.astro';
 import Highlights from '@/components/cv/Highlights.astro';
+import Posts from '@/components/cv/Posts.astro';
+import { getAllPosts } from '@/utils';
+const allPosts = await getAllPosts();
 ---
 
 <Base meta={{ title: 'Home' }}>
@@ -22,6 +25,7 @@ import Highlights from '@/components/cv/Highlights.astro';
 				<Certification />
 				<Highlights />
 				<Skill />
+				{allPosts.length > 0 && <Posts posts={allPosts} />}
 			</div>
 		</div>
 	</div>
