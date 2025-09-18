@@ -109,7 +109,7 @@ Here's how the pieces fit together:
 
 This setup is scalable, resilient, and cleanly decoupled.
 
-![alt text](mermaid01.svg 'Flowchart')
+![alt text](/src/content/post/images/outbox-01.svg 'Flowchart')
 
 ## Gotchas to Watch Out For
 
