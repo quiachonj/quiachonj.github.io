@@ -7,7 +7,7 @@ excerpt: 'htap in azure, olap, oltp, hybrid transactional analytical processing,
 image:
 src:
 alt:
-tags: [Software Architecture, OLAP, OLTP. HTAP]
+tags: [Software Architecture, OLAP, OLTP, HTAP]
 ---
 
 ## Introduction  

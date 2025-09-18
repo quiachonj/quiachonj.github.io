@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en-US" class="h-full"> <head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible"><title>Tag: leetcode • josh quiachon</title><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>"><!-- <link rel='preload' href='/fonts/Satoshi-Variable.ttf' as='font' type='font/ttf' crossorigin />
+	<link
+		rel='preload'
+		href='/fonts/Satoshi-VariableItalic.ttf'
+		as='font'
+		type='font/ttf'
+		crossorigin
+	/>
+	<link rel='preload' href='/fonts/ClashDisplay-Variable.ttf' as='font' type='font/ttf' crossorigin /> --><link rel="canonical" href="http://quiachonj.github.io/tags/leetcode/"><meta content="Tag: leetcode • josh quiachon" name="title"><meta content="View all posts with the tag - leetcode" name="description"><meta content="josh quiachon" name="author"><meta content="" name="theme-color"><meta content="website" property="og:type"><meta content="Tag: leetcode" property="og:title"><meta content="View all posts with the tag - leetcode" property="og:description"><meta content="http://quiachonj.github.io/tags/leetcode/" property="og:url"><meta content="josh quiachon" property="og:site_name"><meta content="en_US" property="og:locale"><meta content="http://quiachonj.github.io/social-card.png" property="og:image"><meta content="1200" property="og:image:width"><meta content="630" property="og:image:height"><meta content="summary_large_image" property="twitter:card"><meta content="http://quiachonj.github.io/tags/leetcode/" property="twitter:url"><meta content="Tag: leetcode" property="twitter:title"><meta content="View all posts with the tag - leetcode" property="twitter:description"><meta content="http://quiachonj.github.io/social-card.png" property="twitter:image"><link href="/sitemap-index.xml" rel="sitemap"><link href="/rss.xml" rel="alternate" title="josh quiachon" type="application/rss+xml"><meta content="Astro v5.13.7" name="generator"><link rel="stylesheet" href="/_astro/index.BnHOQooy.css"><script type="module" src="/_astro/page.BBc6vbNQ.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script></head><body class="flex h-full justify-center bg-primary"> <script>
+	const lightModePref = window.matchMedia('(prefers-color-scheme: light)');
+
+	// Get user preference from local storage or from browser preference
+	function getUserPref() {
+		const storedTheme = localStorage.getItem('theme') ?? undefined;
+		return storedTheme || (lightModePref.matches ? 'light' : 'dark');
+	}
+
+	function setTheme(newTheme) {
+		if (newTheme !== 'light' && newTheme !== 'dark') {
+			return console.log(`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`);
+		}
+
+		localStorage.setItem('theme', newTheme);
+
+		const root = document.documentElement;
+
+		// if current dark theme and new theme is dark, return
+		if (newTheme === 'dark' && root.classList.contains('dark')) {
+			return;
+		} else if (newTheme === 'light' && !root.classList.contains('dark')) {
+			return;
+		}
+
+		root.classList.toggle('dark');
+	}
+
+	// Initial Setup
+	setTheme(getUserPref());
+
+	// View Transitions hook to restore theme
+	document.addEventListener('astro:after-swap', () => setTheme(getUserPref()));
+
+	// Listen for theme-change custom event
+	document.addEventListener('theme-change', (e) => {
+		setTheme(e.detail.theme);
+	});
+
+	// Listen for prefers-color-scheme change
+	lightModePref.addEventListener('change', (e) => setTheme(e.matches ? 'light' : 'dark'));
+</script> <main class="flex w-screen flex-col items-center px-5 pt-5 font-satoshi leading-relaxed text-secondary-foreground md:px-0 lg:max-w-7xl"> <header class="lg:max-w-7xl w-full md:fixed z-20 bg-background-tertiary text-secondary-foreground shadow-xl dark:shadow-black/50 border rounded-2xl border-none flex flex-col justify-center" x-data="{ open: false }"> <nav class="grid grid-cols-2 p-5 md:grid-cols-3" aria-label="global"> <a class="flex flex-row items-center justify-start text-2xl font-semibold uppercase" href="/" aria-label="joshquiachon">josh<span class="text-accent-300">quia</span>chon<span class="text-accent-300">blog</span></a> <div class="col-span-1 flex flex-row items-center justify-end md:col-span-2"> <div class="z-10 hidden flex-row gap-5 pr-5 md:flex"> <a href="/" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="About">About
+</a> <a href="/blog" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="Blog">Blog
+</a> </div> <div> <button id="toggleDarkMode" class="rounded-md border border-border bg-background-tertiary p-1.5 transition-all hover:bg-accent-300"> <span class="sr-only">Dark Theme</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all hover:text-white dark:hidden dark:-rotate-90 dark:scale-0"><path fill="currentColor" d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="hidden h-[1.2rem] w-[1.2rem] rotate-90 scale-0 text-white transition-all dark:block dark:rotate-0 dark:scale-100"><path fill="currentColor" d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"></path></svg> </button> <button id="toggleMobileMenu" class="top-5 rounded-md border border-border bg-background-tertiary p-1.5 shadow-xl transition-all hover:bg-accent-300 dark:shadow-black/50 md:hidden" x-on:click="open = !open"> <span class="sr-only">Menu</span> <svg width="1em" height="1em" x-show="!open" class="h-[1.2rem] w-[1.2rem] transition-all dark:text-white" data-icon="menu">   <symbol id="ai:local:menu" viewBox="0 0 50 50"><path fill="currentColor" d="M3 9a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2zm0 15a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2zm0 15a1 1 0 1 0 0 2h44a1 1 0 1 0 0-2z"/></symbol><use href="#ai:local:menu"></use>  </svg> <svg width="1em" height="1em" x-show="open" class="h-[1.2rem] w-[1.2rem] transition-all dark:text-white" data-icon="close">   <symbol id="ai:local:close" viewBox="0 0 50 50"><path fill="currentColor" d="M7.719 6.281 6.28 7.72 23.563 25 6.28 42.281l1.44 1.439L25 26.438l17.281 17.28 1.438-1.437L26.438 25l17.28-17.281-1.437-1.438L25 23.563Z"/></symbol><use href="#ai:local:close"></use>  </svg> </button> </div> </div> </nav> <nav id="mobile_menu" x-collapse x-show="open" x-transition class="mt-1.5 flex flex-grow flex-col items-center justify-between gap-4 rounded-xl bg-background-tertiary p-5 text-secondary-foreground shadow-xl dark:shadow-black/50 md:hidden"> <a href="/" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="About">About
+</a> <a href="/blog" class="flex-none text-[1.05rem] font-medium hover:text-accent-300" aria-label="Blog">Blog
+</a> </nav> </header> <script type="module" src="/_astro/HeaderBlog.astro_astro_type_script_index_0_lang.BkSZLX8a.js"></script> <div class="mt-5 w-full p-5 md:mt-[5.5rem]">  <div class="w-full"> <a class="inline-flex items-center gap-x-1 rounded-lg bg-accent-200/30 text-secondary-foreground border border-border px-2 py-1 text-sm transition-all hover:bg-input" href="/blog" data-astro-prefetch="true"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"> <path fill="currentColor" d="m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z"></path> </svg> <p>Back</p>  </a> <h1 class="mb-6 mt-5 flex items-end gap-x-2 text-2xl font-bold">
+Tags:
+<span class="text-xl">#leetcode</span> </h1> <section aria-label="Blog post list"> <ul class="flex flex-col gap-y-3 text-start"> <li class="flex flex-col gap-2 text-secondary-foreground sm:flex-row sm:gap-x-4 [&_q]:basis-full"> <time datetime="2024-06-10T00:00:00.000Z" class="min-w-[120px]"> JUN 09, 2024 </time> <h2><a data-astro-prefetch href="/blog/leetcode/" class="font-bold transition-all hover:text-accent-300"> Leetcode&#39;s Longest Palindromic Substring </a> <p class="line-clamp-4 block text-sm italic text-muted-foreground">Algorithm and Data Structure</p></h2> </li> </ul>  </section> </div>  </div> <button aria-label="Back to Top" class="z-90 fixed bottom-8 end-4 flex h-8 w-8 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-secondary-foreground text-3xl text-primary-foreground opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12" data-show="false" id="to-top-btn"><svg aria-hidden="true" class="h-4 w-4" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </button> <script type="module">const e=document.getElementById("to-top-btn"),n=document.getElementById("blog-hero");function c(t){t.forEach(o=>{e.dataset.show=(!o.isIntersecting).toString()})}e.addEventListener("click",()=>{document.documentElement.scrollTo({behavior:"smooth",top:0})});const r=new IntersectionObserver(c);r.observe(n);</script> <footer class="mx-auto mt-24 w-full px-5"> <div class="border-t border-border py-5"> <div class="flex flex-col items-center gap-y-3 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-y-0"> <div class="text-center md:text-right">© 2025 Josh Quiachon</div> </div> </div> </footer> </main> </body></html>
