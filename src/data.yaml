@@ -16,8 +16,12 @@ leetcode: https://leetcode.com/u/ixildore/
 twitter: ''
 location: New York, NY
 birthday: ''
-summary: >
-  I am a senior software engineer specializing in .NET development with hands on experience building enterprise-scale applications across the web, cloud native, and desktop platforms. Skilled in C#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, and Azure services. Proven track record in modernizing legacy platforms and delivering cloud-native solutions with measurable business outcomes. Skilled at navigating complex project requirements, legacy systems, evolving architectural patterns, and collaborating with stakeholders to align project releases with business goals.
+summary: |
+ My name is Josh, and I am a software engineer with over 15 years of experience building enterprise-scale .NET applications across web, cloud-native, and desktop platforms. 
+ I’m skilled in C#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, and Azure services. 
+ I have a proven track record of modernizing legacy platforms and delivering cloud-native solutions that drive measurable business outcomes. 
+ I’m adept at navigating complex project requirements, legacy systems, and evolving architectural patterns.
+ I work closely with teams to build reliable solutions and align project releases with business goals.
 experience:
   - title: Independent Azure Consultant
     company: Amberlogica
