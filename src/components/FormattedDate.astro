@@ -5,21 +5,22 @@ import type { HTMLAttributes } from 'astro/types';
 import { getFormattedDate } from '@/utils';
 
 type Props = HTMLAttributes<'time'> & {
-  date: Date;
-  dateTimeOptions?: Intl.DateTimeFormatOptions;
+	date: Date;
+	dateTimeOptions?: Intl.DateTimeFormatOptions;
 };
 
 const { date, dateTimeOptions, ...attrs } = Astro.props;
 
 // Default to 'MMM DD, YYYY' format if no options are passed
 const defaultOptions: Intl.DateTimeFormatOptions = {
-  month: 'short',
-  day: '2-digit',
-  year: 'numeric',
+	month: 'short',
+	day: '2-digit',
+	year: 'numeric'
 };
 
 const postDate = getFormattedDate(date, dateTimeOptions ?? defaultOptions).toUpperCase();
 ---
+
 <time datetime={date.toISOString()} {...attrs}>
-  {postDate}
+	{postDate}
 </time>

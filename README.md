@@ -1,6 +1,7 @@
 ## Resume Website
+
 dev.quiachonj.us
-from Astro Resume 01 theme 
+from Astro Resume 01 theme
 
 ## Integrations
 
@@ -38,6 +39,7 @@ from Astro Resume 01 theme
 ├── tailwind.config.js
 └── tsconfig.json
 ```
+
 ## npm commands
 
 | Command                | Action                                           |

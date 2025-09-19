@@ -7,12 +7,12 @@ import HeaderBlog from '@/components/layout/HeaderBlog.astro';
 import { siteConfig } from '@/site.config';
 
 const {
-	meta: { articleDate, description = siteConfig.description, ogImage, title}
+	meta: { articleDate, description = siteConfig.description, ogImage, title }
 } = Astro.props;
 ---
 
 <html lang={siteConfig.lang} class="h-full">
-	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title}/>
+	<Head articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
 
 	<body class="flex h-full justify-center bg-primary">
 		<ThemeProvider />
