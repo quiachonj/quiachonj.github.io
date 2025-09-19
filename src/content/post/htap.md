@@ -1,5 +1,5 @@
 ---
-title: 'HTAP in Azure: Real-Time and Analytics Solutions'
+title: Bridging OLTP and OLAP with Azure HTAP
 publishDate: 2025-08-23
 description: System Design - OLAP/OLTP/HTAP
 author: Josh Q.
@@ -7,7 +7,7 @@ excerpt: 'htap in azure, olap, oltp, hybrid transactional analytical processing,
 image:
 src:
 alt:
-tags: [Software Architecture, OLAP, OLTP, HTAP]
+tags: [HTAP in Azure, OLAP, OLTP, Hybrid Transactional Analytical Processing, Azure Synapse Link, CosmosDB, SQL Database]
 ---
 
 ## Introduction

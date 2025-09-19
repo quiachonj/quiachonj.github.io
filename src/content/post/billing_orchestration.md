@@ -3,12 +3,11 @@ title: 'Azure Project: Billing Orchestration at Scale'
 publishDate: 2025-07-02
 description: Systems Design
 author: Josh Q.
-excerpt: >
-  'As organizations scale, billing complexity tends to grow with them. Multiple systems, each with its own cadence, logic, and data model, often coexist across business units. Creating fragmented customer experiences and operational inefficiencies. Manual reconciliation, brittle integrations, and delayed invoicing become the norm. The challenge isn’t just technical. It’s strategic: how do you unify billing across diverse systems without compromising availability or introducing rigid dependencies?'
+excerpt: 'azure data factory, adf'
 image:
 src:
 alt:
-tags: [Software Architecture, Full Stack Development, Software Engineering]
+tags: [Software Architecture, Full Stack Development, Software Engineering, Azure Data Factory, ADF]
 ---
 
 As organizations scale, billing complexity tends to grow with them. Multiple systems, each with its own cadence, logic, and data model, often coexist across business units. Creating fragmented customer experiences and operational inefficiencies. Manual reconciliation, brittle integrations, and delayed invoicing become the norm. The challenge isn’t just technical. It’s strategic: how do you unify billing across diverse systems without compromising availability or introducing rigid dependencies?
