@@ -8,7 +8,7 @@ title:
  - Solutions Architect
  - Data Analyst
 email: josh@quiachonj.us
-phone: +1 (646)600-8732
+phone: +1 (646) 600-8732
 website: dev.quiachonj.us
 linkedin: https://linkedin.com/in/quiachonj
 github: https://github.com/quiachonj
@@ -17,11 +17,9 @@ twitter: ''
 location: New York, NY
 birthday: ''
 summary: |
- My name is Josh, and I am a software engineer with over 15 years of experience building enterprise-scale .NET applications across web, cloud-native, and desktop platforms. 
- I’m skilled in C#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, and Azure services. 
- I have a proven track record of modernizing legacy platforms and delivering cloud-native solutions that drive measurable business outcomes. 
- I’m adept at navigating complex project requirements, legacy systems, and evolving architectural patterns.
- I work closely with teams to build reliable solutions and align project releases with business goals.
+ My name is Josh and I have over 15 years of end to end experience in building customized enterprise solutions. 
+ I help organizations modernize legacy applications, initiate migrations to cloud-native platforms as well as develop 
+ reliable systems that can scale with business growth without overhauling what already works.
 experience:
   - title: Independent Azure Consultant
     company: Amberlogica
@@ -29,7 +27,7 @@ experience:
     startDate: Oct 2024
     endDate: Present
     description:
-      - project: SaaS Home and Healthcare Billing
+      - project: Software as a Service Home and Healthcare Billing
         responsibilities:
         - Designed and developed core billing feature on Azure App Services + ASP.NET Core + EF Core, exposing secure REST APIs.
         - Built initial workflows with Azure SQL, Cosmos DB, Blob Storage, Service Bus, Queue Storage, Functions, and Redis to support scalable, message-driven billing and document automation operations.
